@@ -1,0 +1,29 @@
+/*  Styles for German Newspapers map. */
+
+/* pop-up window */
+.bubble.static.selected {
+	max-width:600px !important;
+	width:600px;
+}
+
+.feature-container {
+	width:100%;
+}
+
+.feature-image, .feature-translation {
+	width:50%;
+	float:left;
+}
+
+.feature-image img {
+	width:90% !important;
+	height:auto !important;
+	margin-top:20px !important;
+	margin-left:15px !important;
+	padding-right:15px !important;
+}
+
+img.masthead {
+	width:100% !important;
+	height:auto !important;
+}
