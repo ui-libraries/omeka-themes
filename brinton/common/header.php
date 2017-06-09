@@ -66,7 +66,7 @@
 				<nav id="header-navigation" class="thirteen columns" role="navigation">
 					
 					<ul id="navigation">
-						<li class="current"><a href="index.html" title="Home">Home</a></li>
+						<li class="current"><a href="<?php echo WEB_ROOT; ?>" title="Home">Home</a></li>
 						<li><a href="<?php echo WEB_ROOT; ?>/collections/show/1">Films</a></li>
 						<li><a href="<?php echo WEB_ROOT; ?>/collections/show/2">Gallery</a></li>
 						<li><a href="<?php echo WEB_ROOT; ?>/collections/show/3">Documents</a></li>						
