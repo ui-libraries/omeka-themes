@@ -1,0 +1,75 @@
+@import "susy";
+@import "base";
+//@import "compass";
+
+/* -------------------------------------------------------------------------*/
+/* Table of Contents 
+-- Layout
+-- General
+-- Search
+-- Navigation
+-- Exhibits
+-- Items and Browse
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+/*#site-title {@include span-columns (7,12);}
+#search-container {@include span-columns (5 omega, 12);}
+#featured {@include span-columns (7,12);}
+.pagination {@include span-columns(12);}
+#sort-links {@include span-columns(12);}
+#recent-items {@include span-columns (5 omega, 12);}
+#advanced-search-form label,
+#advanced-search-form .label,
+.field .columns.alpha {@include span-columns (3,12);}
+#advanced-search-form .inputs,
+.field .columns.omega,
+.field .inputs,
+div#contribution-type-form div.inputs {@include span-columns (9 omega, 12);}*/
+
+.exhibits.summary #primary,
+.exhibits.summary #content > h1:first-of-type,
+.exhibits.show #content > h1:first-of-type,
+#exhibit-blocks,
+#exhibit-page-navigation {
+  //  @include span-columns (8,12);
+}
+
+.exhibits #exhibit-pages:not(.full) {
+    width: columns(4);
+    display: inline-block;
+    margin-right: 0;
+}
+
+.full ~ #exhibit-blocks,
+.full ~ #exhibit-page-navigation {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------*/
+/* General */
+
+
+
+/* -------------------------------------------------------------------------*/
+/* Search */
+
+
+
+/* -------------------------------------------------------------------------*/
+/* Header */
+
+
+/* -------------------------------------------------------------------------*/
+/* Navigation */
+
+
+
+/* -------------------------------------------------------------------------*/
+/* Exhibits */
+
+
+
+/* -------------------------------------------------------------------------*/
+/* Items and Browse */
+

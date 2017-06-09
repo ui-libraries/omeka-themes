@@ -1,0 +1,26 @@
+@mixin link-button {
+    min-height: 1.5 * $base-line-height;
+    padding: rhythm(.25);
+    display: block;
+    color: $accent-dark;
+    margin-bottom:.5em;
+    border: 0;
+    &:hover {
+        color: $accent-light;
+        text-decoration: none;
+   }
+   &:active {
+        background-color:$accent-light;
+   }
+}
+
+@mixin line-button {
+    &:before {
+        content: "\2014\0020";
+    }
+}
+
+@mixin calc($property, $expression) { 
+  #{$property}: -webkit-calc(#{$expression}); 
+  #{$property}: calc(#{$expression}); 
+} 

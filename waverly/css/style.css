@@ -1,0 +1,796 @@
+/* -------------------------------------------------------------------------*/
+/* Imports */
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/** 1. Set default font family to sans-serif. 2. Prevent iOS text size adjust after orientation change, without disabling user zoom. */
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville");
+html { font-family: sans-serif; /* 1 */ -ms-text-size-adjust: 100%; /* 2 */ -webkit-text-size-adjust: 100%; /* 2 */ }
+
+/** Remove default margin. */
+body { margin: 0; }
+
+/* HTML5 display definitions ========================================================================== */
+/** Correct `block` display not defined for any HTML5 element in IE 8/9. Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox. Correct `block` display not defined for `main` in IE 11. */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/** 1. Correct `inline-block` display not defined in IE 8/9. 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera. */
+audio, canvas, progress, video { display: inline-block; /* 1 */ vertical-align: baseline; /* 2 */ }
+
+/** Prevent modern browsers from displaying `audio` without controls. Remove excess height in iOS 5 devices. */
+audio:not([controls]) { display: none; height: 0; }
+
+/** Address `[hidden]` styling not present in IE 8/9/10. Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22. */
+[hidden], template { display: none; }
+
+/* Links ========================================================================== */
+/** Remove the gray background color from active links in IE 10. */
+a { background-color: transparent; }
+
+/** Improve readability when focused and also mouse hovered in all browsers. */
+a:active, a:hover { outline: 0; }
+
+/* Text-level semantics ========================================================================== */
+/** Address styling not present in IE 8/9/10/11, Safari, and Chrome. */
+abbr[title] { border-bottom: 1px dotted; }
+
+/** Address style set to `bolder` in Firefox 4+, Safari, and Chrome. */
+b, strong { font-weight: bold; }
+
+/** Address styling not present in Safari and Chrome. */
+dfn { font-style: italic; }
+
+/** Address variable `h1` font-size and margin within `section` and `article` contexts in Firefox 4+, Safari, and Chrome. */
+h1 { font-size: 2em; margin: 0.67em 0; }
+
+/** Address styling not present in IE 8/9. */
+mark { background: #ff0; color: #000; }
+
+/** Address inconsistent and variable font size in all browsers. */
+small { font-size: 80%; }
+
+/** Prevent `sub` and `sup` affecting `line-height` in all browsers. */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+/* Embedded content ========================================================================== */
+/** Remove border when inside `a` element in IE 8/9/10. */
+img { border: 0; }
+
+/** Correct overflow not hidden in IE 9/10/11. */
+svg:not(:root) { overflow: hidden; }
+
+/* Grouping content ========================================================================== */
+/** Address margin not present in IE 8/9 and Safari. */
+figure { margin: 1em 40px; }
+
+/** Address differences between Firefox and other browsers. */
+hr { box-sizing: content-box; height: 0; }
+
+/** Contain overflow in all browsers. */
+pre { overflow: auto; }
+
+/** Address odd `em`-unit font size rendering in all browsers. */
+code, kbd, pre, samp { font-family: monospace, monospace; font-size: 1em; }
+
+/* Forms ========================================================================== */
+/** Known limitation: by default, Chrome and Safari on OS X allow very limited styling of `select`, unless a `border` property is set. */
+/** 1. Correct color not being inherited. Known issue: affects color of disabled elements. 2. Correct font properties not being inherited. 3. Address margins set differently in Firefox 4+, Safari, and Chrome. */
+button, input, optgroup, select, textarea { color: inherit; /* 1 */ font: inherit; /* 2 */ margin: 0; /* 3 */ }
+
+/** Address `overflow` set to `hidden` in IE 8/9/10/11. */
+button { overflow: visible; }
+
+/** Address inconsistent `text-transform` inheritance for `button` and `select`. All other form control elements do not inherit `text-transform` values. Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera. Correct `select` style inheritance in Firefox. */
+button, select { text-transform: none; }
+
+/** 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio` and `video` controls. 2. Correct inability to style clickable `input` types in iOS. 3. Improve usability and consistency of cursor style between image-type `input` and others. */
+button, html input[type="button"], input[type="reset"], input[type="submit"] { -webkit-appearance: button; /* 2 */ cursor: pointer; /* 3 */ }
+
+/** Re-set default cursor for disabled elements. */
+button[disabled], html input[disabled] { cursor: default; }
+
+/** Remove inner padding and border in Firefox 4+. */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/** Address Firefox 4+ setting `line-height` on `input` using `!important` in the UA stylesheet. */
+input { line-height: normal; }
+
+/** It's recommended that you don't attempt to style these elements. Firefox's implementation doesn't respect box-sizing, padding, or width. 1. Address box sizing set to `content-box` in IE 8/9/10. 2. Remove excess padding in IE 8/9/10. */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+
+/** Fix the cursor style for Chrome's increment/decrement buttons. For certain `font-size` values of the `input`, it causes the cursor style of the decrement button to change from `default` to `text`. */
+input[type="number"]::-webkit-inner-spin-button, input[type="number"]::-webkit-outer-spin-button { height: auto; }
+
+/** 1. Address `appearance` set to `searchfield` in Safari and Chrome. 2. Address `box-sizing` set to `border-box` in Safari and Chrome (include `-moz` to future-proof). */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ /* 2 */ box-sizing: content-box; }
+
+/** Remove inner padding and search cancel button in Safari and Chrome on OS X. Safari (but not Chrome) clips the cancel button when the search input has padding (and `textfield` appearance). */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/** Define consistent border, margin, and padding. */
+fieldset { border: 1px solid #c0c0c0; margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/** 1. Correct `color` not being inherited in IE 8/9/10/11. 2. Remove padding so people aren't caught out if they zero out fieldsets. */
+legend { border: 0; /* 1 */ padding: 0; /* 2 */ }
+
+/** Remove default vertical scrollbar in IE 8/9/10/11. */
+textarea { overflow: auto; }
+
+/** Don't inherit the `font-weight` (applied by a rule above). NOTE: the default cannot safely be changed in Chrome and Safari on OS X. */
+optgroup { font-weight: bold; }
+
+/* Tables ========================================================================== */
+/** Remove most spacing between table cells. */
+table { border-collapse: collapse; border-spacing: 0; }
+
+td, th { padding: 0; }
+
+/* -------------------------------------------------------------------------*/
+/* Screen */
+@font-face { font-family: BebasNeueBold; src: url(../fonts/BebasNeueBold.otf); }
+
+/* -------------------------------------------------------------------------*/
+/* Table of Contents
+-- General Styles
+---- Layout
+---- General Styles
+---- Headings
+---- Links
+-- Navigation
+---- General Nav
+---- Mega-Menu Navigation
+-- Forms
+---- Search
+---- Advanced Search
+-- Tables
+-- Content
+---- Browse and Item Pages
+---- Collections
+---- TagCloud
+-- Plugins
+---- Simple Pages
+---- Geolocation
+---- Exhibits
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+#wrap { /*    @include susy-grid-background;
+*/ overflow: hidden; }
+
+/*#search-container{@include span-columns(12 omega);}
+.nav-menu {@include span-columns(12); margin-right:0;}
+#content {@include span-columns(12 omega);}
+.pagination {@include span-columns(12);}
+#item-filters {@include span-columns(12 omega);}
+#sort-links{@include span-columns(12);}
+#outputs {@include span-columns(12)}
+#advanced-search-form label {@include span-columns(12);}
+#advanced-search-form .inputs {@include span-columns(12 omega);}
+footer {@include span-columns(12 omega);}*/
+/* -------------------------------------------------------------------------*/
+/* General Styles */
+body { background-color: #fff; font-family: "Georgia", "Times New Roman", serif; font-size: 16px; line-height: 30px; color: #000; margin: 0; }
+
+article { clear: both; }
+
+.element-set, .item, .element, .collection, .exhibit, .hTagcloud { padding: 1em 0; overflow: hidden; clear: both; }
+
+#featured-item, #featured-collection, #featured-exhibit, #recent-items { overflow: hidden; margin: 1em 0 0; }
+
+#featured-item h2, #featured-item #item-filters .collection, #item-filters #featured-item .collection, #featured-item h3, #featured-item .item, #featured-item .collection, #featured-item .exhibit, #featured-collection h2, #featured-collection #item-filters .collection, #item-filters #featured-collection .collection, #featured-collection h3, #featured-collection .item, #featured-collection .collection, #featured-collection .exhibit, #featured-exhibit h2, #featured-exhibit #item-filters .collection, #item-filters #featured-exhibit .collection, #featured-exhibit h3, #featured-exhibit .item, #featured-exhibit .collection, #featured-exhibit .exhibit, #recent-items h2, #recent-items #item-filters .collection, #item-filters #recent-items .collection, #recent-items h3, #recent-items .item, #recent-items .collection, #recent-items .exhibit { padding: 0; }
+
+#featured-item img, #featured-collection img, #featured-exhibit img, #recent-items img { float: right; }
+
+.intro { font-style: italic; }
+
+#content { padding: 1em 0 0 0; margin-bottom: -10px; overflow: auto; }
+
+abbr, acronym { border: none; font-style: normal; }
+
+.clear { clear: both; }
+
+a.show { padding-left: 5px; font-style: italic; }
+
+blockquote { font-style: italic; }
+
+.view-items-link { margin: 1em 0 .5em 0; }
+
+.view-items-link a { min-height: 45px; padding: rhythm(0.25); display: block; color: #000; margin-bottom: .5em; border: 0; display: inline; }
+
+.view-items-link a:hover { color: #B3B3B3; text-decoration: none; }
+
+.view-items-link a:active { background-color: #B3B3B3; }
+
+#outputs { margin-top: 1em; }
+
+.has-margin { margin: 4em; }
+
+footer { padding: .5em 0; overflow: auto; }
+
+/* -------------------------------------------------------------------------*/
+/* Headings */
+headings { font-weight: normal; line-height: 45px; text-transform: uppercase; padding: .5em 0; margin: 0; color: #000; }
+
+headings(2)headings(3)headings(4) { font-family: "BebasNeueBold", sans-serif; font-style: 19.2px; }
+
+headings(1)headings(5)headings(6) { font-family: "Libre Baskerville", serif; font-style: italic; }
+
+h1 { font-family: "Libre Baskerville", serif; font-size: 24px; font-style: italic; clear: both; word-wrap: break-word; line-height: 48px; }
+
+h2, #item-filters .collection { font-family: "Libre Baskerville", serif; font-size: 19.2px; font-style: italic; }
+
+h3 { font-size: 24px; font-family: "BebasNeueBold", sans-serif; }
+
+#site-title { font-family: "BebasNeueBold", sans-serif; font-size: 40px; line-height: 60px; margin: .5em 1.2em; width: 35%; float: left; }
+
+#site-title a { text-decoration: none; color: #000; }
+
+#site-title a:hover { color: #B3B3B3; }
+
+/* -------------------------------------------------------------------------*/
+/* Links */
+a { text-decoration: none; color: #B3B3B3; }
+
+a:hover { text-decoration: underline; }
+
+p a { color: #993333; }
+
+/* -------------------------------------------------------------------------*/
+/* General Navigation */
+.navigation, #sort-links { list-style: none; padding: 0; }
+
+.navigation ul, #sort-links ul { margin: 0; padding: 0; }
+
+.navigation li, #sort-links li { display: inline; }
+
+.asc a:after, .desc a:after { font-family: "FontAwesome"; }
+
+.asc a:after { content: " \f0d8"; }
+
+.desc a:after { content: " \f0d7"; }
+
+.secondary-nav, #secondary-nav { margin-bottom: 1em; overflow: auto; }
+
+.secondary-nav li, #secondary-nav li { margin-right: 10px; display: block; float: left; }
+
+.secondary-nav li.active a, #secondary-nav li.active a { font-weight: bold; }
+
+.browse .secondary-nav li:before, .browse #secondary-nav li:before, .tags .secondary-nav li:before, .tags #secondary-nav li:before, .items .secondary-nav li:before, .items #secondary-nav li:before { content: "\2014\0020"; }
+
+.pagination { margin: 1em 0; }
+
+.pagination .page-input form { padding: 0; }
+
+.pagination .page-input #page { width: 30px; text-align: right; }
+
+.pagination .page-input input { width: 30px; text-align: center; margin: 0; }
+
+.pagination .pagination_next a, .pagination .pagination_previous a, .pagination .previous-page a, .pagination .next-page a { min-height: 45px; padding: rhythm(0.25); display: block; color: #000; margin-bottom: .5em; border: 0; line-height: 24px; }
+
+.pagination .pagination_next a:hover, .pagination .pagination_previous a:hover, .pagination .previous-page a:hover, .pagination .next-page a:hover { color: #B3B3B3; text-decoration: none; }
+
+.pagination .pagination_next a:active, .pagination .pagination_previous a:active, .pagination .previous-page a:active, .pagination .next-page a:active { background-color: #B3B3B3; }
+
+.pagination_next a, .pagination_previous a { display: inline-block; text-indent: -9999px; position: relative; width: 45px; text-align: center; }
+
+.pagination_next a:after, .pagination_previous a:after { font-family: "FontAwesome"; position: absolute; left: 0; top: 0; width: 45px; height: 45px; line-height: 45px; text-indent: 0; }
+
+.pagination_previous a:after { content: "\f104"; }
+
+.pagination_next a:after { content: "\f105"; }
+
+.item-pagination { padding: 2em 0 1em 0; }
+
+#sort-links { margin: 0 0 1em 0; }
+
+#sort-links .sort-label { float: left; }
+
+#sort-links #sort-links-list { overflow: auto; padding-left: 10px; }
+
+#sort-links li { float: left; margin-right: 10px; }
+
+#sort-links li.sorting a { text-decoration: underline; font-weight: bold; }
+
+#simple-pages-breadcrumbs { display: none; }
+
+#bottom-nav { display: none; }
+
+/* -------------------------------------------------------------------------*/
+/* Top Navigation - Mega Menu Styles */
+#top-nav { padding-top: 10px; width: auto; }
+
+#top-nav .nav-menu li { display: inline; float: left; }
+
+#top-nav .nav-menu li a { font-family: "BebasNeueBold", sans-serif; font-size: 19.2px; line-height: 45px; color: #000; padding: 1.4em; }
+
+#top-nav .nav-menu li a:hover { text-decoration: none; color: #B3B3B3; }
+
+#top-nav .nav-menu .sub-nav { display: none; background-color: #fff; }
+
+#top-nav .nav-menu .sub-nav.open { display: block; width: 100%; position: relative; margin: 0; padding: 0; top: 0; }
+
+#top-nav .nav-menu .sub-nav.open li { padding: 0; }
+
+#top-nav .nav-menu .sub-nav.open li a { color: #000; padding: 1em; }
+
+#top-nav .nav-menu .sub-nav.open li a:hover { color: #B3B3B3; text-decoration: none; }
+
+#top-nav .nav-menu .sub-nav.open .active a { color: #000; }
+
+#top-nav .nav-menu .sub-nav.open ul a:before { content: "\2014\0020"; }
+
+#top-nav .nav-menu [aria-haspopup="true"]:after { font-family: "FontAwesome"; content: "\f0da"; margin: 0 0 0 .5em; vertical-align: bottom; }
+
+#top-nav .nav-menu [aria-haspopup="true"].open:after { content: "\f0d7"; }
+
+/* -------------------------------------------------------------------------*/
+/* Forms */
+form fieldset { border: 0; padding: 0; margin: 0 0 rhythm() 0; }
+
+form label, form input, form select { margin: 1em .5em 1em 0; }
+
+select { height: 45px; line-height: 45px; font-size: 16px; margin-right: 3px !important; display: inline-block; }
+
+input[type=text], input[type=password] { min-height: 45px; padding: rhythm(0.25); }
+
+input[type=submit], button, .button { min-height: 45px; padding: rhythm(0.25); display: block; color: #000; margin-bottom: .5em; border: 0; }
+
+input[type=submit]:hover, button:hover, .button:hover { color: #B3B3B3; text-decoration: none; }
+
+input[type=submit]:active, button:active, .button:active { background-color: #B3B3B3; }
+
+.button:focus { outline: -webkit-focus-ring-color auto 5px; }
+
+/* -------------------------------------------------------------------------*/
+/*-- Search--*/
+#search-container #search-form { position: relative; float: right; height: 30px; margin: 20px 40px; }
+
+#search-container #search-form #query { border: 2px solid #000; height: 30px; }
+
+#search-container #search-form #submit_search { background-color: transparent; }
+
+#search-container .show-advanced, #search-container button { margin: 0; width: 45px; position: absolute; top: 0; text-align: center; color: #000; }
+
+#search-container .show-advanced:hover, #search-container button:hover { color: #fff; }
+
+#search-container .show-advanced:after, #search-container button:after { font-family: "FontAwesome"; text-indent: 0; position: absolute; top: 0; left: 0; bottom: 0; right: 0; line-height: 30px; padding: rhythm(0.25); }
+
+#search-container.with-advanced .show-advanced { right: 47.499px; }
+
+#search-container.with-advanced button { right: 0; }
+
+#search-container .show-advanced, #search-container button { text-indent: -9999px; right: 0; }
+
+#search-container .show-advanced:after { content: "\f141"; }
+
+#search-container button:after { content: "\f002"; }
+
+#search-container #advanced-form { position: absolute; top: 45px; background-color: #fff; z-index: 20; width: 100%; border: 1px solid; border-top-color: #fff; padding: 0 5%; text-align: left; }
+
+#search-container #advanced-form.closed { display: none; }
+
+#search-container #advanced-form label { font-weight: normal; }
+
+#search-container #advanced-form input[type=checkbox], #search-container #advanced-form input[type=radio] { margin: rhythm(0.25) 5px 0 0; float: left; }
+
+#search-filters ul, #item-filters ul { list-style-type: none; padding: 0; }
+
+#search-filters li, #item-filters li { display: inline-block; vertical-align: top; }
+
+#search-filters li:not(:last-of-type), #item-filters li:not(:last-of-type) { border-right: 1px solid #000; padding-right: .5em; margin-right: .25em; }
+
+#search-filters ul ul, #item-filters ul ul { display: inline-block; }
+
+#search-filters li li, #item-filters li li { text-transform: lowercase; }
+
+#search-filters li li:not(:last-of-type):after, #item-filters li li:not(:last-of-type):after { content: ", "; }
+
+#search-filters li li:not(:last-of-type), #item-filters li li:not(:last-of-type) { border-right: 0; padding-right: 0; margin-right: .125em; }
+
+/* -------------------------------------------------------------------------*/
+/* Advanced Search Form */
+.field { overflow: auto; }
+
+.field label { display: inline-block; }
+
+#advanced-search-form { padding: 2em 0; }
+
+#advanced-search-form label, #advanced-search-form input, #advanced-search-form select, #advanced-search-form button { margin: .5em 0; }
+
+.remove_search { padding: rhythm(0.25) 10px; text-indent: -9999px; width: 45px; position: relative; height: 45px; display: inline-block; }
+
+.remove_search:after { content: "\f00d"; font-family: "FontAwesome"; text-indent: 0; text-align: center; width: 100%; top: 0; left: 0; position: absolute; line-height: 45px; }
+
+/* -------------------------------------------------------------------------*/
+/* Banner images */
+div.panel { background: rgba(255, 255, 255, 0.9); width: 60%; float: left; margin: 10em 0em 2em 3em; padding: 3em 5em; }
+
+#about #content, #home #content { background-image: url(../images/home.png) no-repeat; background-size: cover; }
+
+#bibliography #content { background-image: url(../images/centenary.jpg); background-size: contain; background-repeat: no-repeat; }
+
+#bibliography #content div.panel { margin-top: 20em; background: transparent; }
+
+.signs.summary #content { background-image: url(../images/exhibit_novels_summary.png); background-size: cover; }
+
+.signs.show #exhibit-banner { background-image: url(../images/exhibit_novels_show.png); background-size: cover; }
+
+footer { background-image: url(../images/footer.png); background-size: cover; min-height: 250px; }
+
+/* -------------------------------------------------------------------------*/
+/* Tables */
+table { width: 100%; margin: 1em 0; overflow: auto; }
+
+th, td { border-bottom: 1px solid #B3B3B3; margin: 0; padding: 0.5em 0; }
+
+th { border-width: 3px; text-align: left; }
+
+/* -------------------------------------------------------------------------*/
+/* Browse and Item Pages */
+.collections #content { padding: 5em 10em; }
+
+.items #content { padding: 5em 10em; }
+
+.items #content .item-file { float: right; max-width: 60%; }
+
+.items #content .element-set { float: left; clear: none; width: 35%; }
+
+.items #content nav { width: 50%; margin-left: auto; margin-right: auto; font-family: "BebasNeueBold", sans-serif; }
+
+.items #content nav .previous { float: left; text-align: left; }
+
+.items #content nav .next { float: right; text-align: left; }
+
+.items #content nav a { font-size: 16px; color: #000; }
+
+.items #content nav a:hover { color: #B3B3B3; text-decoration: none; }
+
+.item-file img { float: right; height: auto; }
+
+#itemfiles .item-file { display: inline-block; padding-right: 1em; }
+
+#itemfiles [class^="video-"].item-file, #itemfiles [class*=" video-"].item-file, #itemfiles [class^="audio-"].item-file, #itemfiles [class*=" audio-"].item-file { display: block; padding-right: 0; }
+
+#itemfiles .download-link { display: block; height: rhythm(5); }
+
+#itemfiles .download-link img { height: 100%; width: auto; }
+
+/* -------------------------------------------------------------------------*/
+/* File Pages */
+#sidebar { clear: both; }
+
+/* -------------------------------------------------------------------------*/
+/* Collections */
+.collections .collection { margin-bottom: 2em; }
+
+.collections .element { margin: 0 0 1em 0; padding: 0; clear: none; }
+
+#item-filters ul { list-style-type: none; padding-left: 0; }
+
+#item-filters .collection { overflow: initial; border-top: none; }
+
+.image { float: right; margin: 0 0 rhythm() rhythm(); height: rhythm(5); }
+
+.image img { float: left; height: 100%; width: auto; }
+
+.collection .image img, .exhibit .image img { margin-left: 12px !important; }
+
+/* -------------------------------------------------------------------------*/
+/* TagCloud */
+.hTagcloud ul { list-style: none; margin-left: 0; padding-left: 0; padding-top: 1em; }
+
+.hTagcloud ul li { display: inline-block; margin: 7.5px 20px; margin-left: 0; }
+
+.hTagcloud ul li a { text-decoration: none; }
+
+.hTagcloud ul .popular, .hTagcloud ul .-popular { font-size: 120%; }
+
+.hTagcloud ul .v-popular { font-size: 140%; }
+
+.hTagcloud ul .vv-popular { font-size: 180%; }
+
+.hTagcloud ul .vvv-popular { font-size: 220%; }
+
+.hTagcloud ul .vvvv-popular { font-size: 260%; }
+
+.hTagcloud ul .vvvvv-popular { font-size: 300%; }
+
+.hTagcloud ul .vvvvvv-popular { font-size: 320%; }
+
+.hTagcloud ul .vvvvvvv-popular { font-size: 340%; }
+
+.hTagcloud ul .vvvvvvvv-popular { font-size: 360%; }
+
+/* -------------------------------------------------------------------------*/
+/* Simple Pages */
+#acknowledgements .panel, .neatline .panel { margin-top: 1em !important; width: 80%; }
+
+#bibliography #primary p { padding-left: 3em; text-indent: -3em; }
+
+/* -------------------------------------------------------------------------*/
+/* Geolocation */
+#map #map-links { padding-top: 0 !important; }
+
+#map #link-block { height: auto; }
+
+#geolocation { margin: 1em 0; }
+
+/* -------------------------------------------------------------------------*/
+/* Commenting */
+#comments-container { margin: 1em 0; }
+
+#comments-container #comments { margin: 0; padding: 0; }
+
+#recaptcha_area input { min-height: 0; }
+
+/* -------------------------------------------------------------------------*/
+/* Exhibits */
+#exhibit-pages:not(.full) { padding-top: 0; }
+
+#exhibit-pages:not(.full) ul { padding: 0; list-style-type: none; }
+
+#exhibit-pages:not(.full) ul li { padding: .5em 0; display: block; }
+
+#exhibit-pages:not(.full) ul li a { display: block; }
+
+#exhibit-pages:not(.full) ul li a:hover { text-decoration: none; }
+
+#exhibit-pages:not(.full) ul li ul a:before { content: "\2014\0020"; }
+
+#exhibit-pages:not(.full) > ul { margin-left: 0; }
+
+.exhibit .description p:first-of-type, .collection .collection-description p:first-of-type { margin-top: 0; }
+
+#exhibit-pages.full ul { margin: 1em 0 0 0; list-style-type: none; }
+
+#exhibit-pages.full ul li { display: block; }
+
+#exhibit-pages.full ul li a { display: block; }
+
+#exhibit-pages.full ul li a:hover { text-decoration: none; }
+
+#exhibit-pages.full ul li ul { margin-left: 2em; }
+
+#exhibit-pages.full .current-page { display: block; background-color: #B3B3B3; padding: .5em; color: white; }
+
+#exhibit-pages.full #secondary-nav { overflow: hidden; }
+
+#exhibit-pages.full #secondary-nav li { border: none; margin: 0 .5em .5em 0; }
+
+#exhibit-pages.full #secondary-nav ul { width: 100%; float: left; margin: 0; }
+
+#exhibit-pages.full #secondary-nav ul .current a { color: white; }
+
+#exhibit-pages.full #secondary-nav ul li { padding: 0; display: block; float: left; }
+
+#exhibit-pages.full #secondary-nav ul li a { min-height: 45px; padding: rhythm(0.25); display: block; color: #000; margin-bottom: .5em; border: 0; margin-bottom: 0; }
+
+#exhibit-pages.full #secondary-nav ul li a:hover { color: #B3B3B3; text-decoration: none; }
+
+#exhibit-pages.full #secondary-nav ul li a:active { background-color: #B3B3B3; }
+
+#exhibit-pages.full #secondary-nav > li:nth-child(2) { display: block; }
+
+#exhibit-pages.full #secondary-nav > li:nth-child(3) { display: block; clear: both; }
+
+#exhibit-pages.full #secondary-nav > li:nth-child(4) { display: block; clear: left; }
+
+#exhibit-pages.full #secondary-nav .exhibit-title { font-family: "BebasNeueBold", sans-serif; text-transform: uppercase; padding: .5em 0; }
+
+#exhibit-pages.full #secondary-nav .exhibit-title:after { content: ":"; }
+
+.summary #primary { clear: none; }
+
+.summary #exhibit-pages { display: block; text-align: center; margin-top: 10em; float: left; width: 20%; }
+
+.summary #exhibit-pages ul { margin-left: auto; margin-right: auto; }
+
+.summary #exhibit-pages li a { display: inline-block !important; color: #fff; font-family: "BebasNeueBold", sans-serif; font-size: 19.2px; padding-top: 2em; padding-bottom: 1em; border-bottom: 6px solid #fff; margin-left: 2em; margin-right: 2em; }
+
+.exhibit-block { margin-top: 1em; padding-right: 1em; overflow: auto; clear: both; }
+
+.exhibit-block .exhibit-items.left { margin-right: 5%; }
+
+.exhibit-block .exhibit-items.right { margin-left: 5%; }
+
+#exhibit-page-navigation { clear: both; margin: 0; padding: 1em 0em; }
+
+#exhibit-page-navigation .current-page { display: block; padding: .5em 0; color: white; margin-top: .5em; }
+
+#exhibit-page-navigation #exhibit-nav-up { width: 100%; }
+
+.show #exhibit-banner { width: 100%; display: block; height: 500px; text-align: center; }
+
+.show #exhibit-banner .panel.centered { display: inline-block; float: none; width: 60%; padding: 2em; margin-left: 0; margin-top: 8em; }
+
+.show #exhibit-banner .panel.centered p, .show #exhibit-banner .panel.centered a { display: inline; color: #000; font-family: "BebasNeueBold", sans-serif; }
+
+.show #exhibit-banner .panel.centered p { font-size: 24px; }
+
+.show #exhibit-banner .panel.centered #exhibit-page-navigation { height: 60px; vertical-align: middle; }
+
+.show #exhibit-banner .panel.centered .exhibit-nav-item { width: 30%; vertical-align: middle; }
+
+.show #exhibit-banner .panel.centered .exhibit-nav-item img { padding: 5px; margin-top: -5px; }
+
+.show #exhibit-banner .panel.centered .exhibit-nav-item a { font-size: 19.2px; vertical-align: top; margin: 0; padding: 15px 0 0 0; text-align: center; display: inline-block; }
+
+.show #exhibit-banner .panel.centered .exhibit-nav-item a:hover { text-decoration: none; color: #B3B3B3; }
+
+.show #exhibit-banner .panel.centered #exhibit-current-page { padding-bottom: .5em; margin-left: auto; margin-right: auto; text-align: center; }
+
+.show #exhibit-banner .panel.centered #exhibit-current-page p { border-bottom: 6px solid #000; }
+
+.show #exhibit-banner .panel.centered #exhibit-nav-prev { float: left; }
+
+.show #exhibit-banner .panel.centered #exhibit-nav-next { float: right; margin-top: -2.4em; }
+
+.show .layout-file img.full { width: 100%; margin-bottom: 3em; }
+
+.show .exhibit-item-caption { line-height: 15px; }
+
+.show #exhibit-blocks { margin: 3em 10em; }
+
+.show .exhibit-block { overflow: visible; }
+
+.show .navigation-bottom { background-color: #000; width: 100%; padding: 2em 0; }
+
+.show #exhibit-page-navigation-bottom { width: 50%; min-height: 50px; margin-left: auto; margin-right: auto; font-size: 24px; font-family: "BebasNeueBold", sans-serif; color: #fff; vertical-align: middle; }
+
+.show #exhibit-page-navigation-bottom img { display: inline-block; padding: 5px; }
+
+.show #exhibit-page-navigation-bottom .current-page { border-bottom: 6px solid #fff; }
+
+.show #exhibit-page-navigation-bottom a { display: inline-block; vertical-align: middle; font-size: 19.2px; color: #fff; height: 75px; }
+
+.show #exhibit-page-navigation-bottom a:hover { color: #B3B3B3; text-decoration: none; }
+
+/* -------------------------------------------------------------------------*/
+/* Html5MediaPlayer */
+.mejs-inner button { /* Prevents all media player buttons from showing. */ min-height: 0; }
+
+/* -------------------------------------------------------------------------*/
+/* Footer */
+#ui-brand { margin-top: 2em; margin-left: 3em; }
+
+#ui-brand img { width: 200px; }
+
+/* -------------------------------------------------------------------------*/
+/* Screen - Mobile */
+@media screen and (min-device-width: 320px) and (max-device-width: 650px) { @font-face { font-family: BebasNeueBold; src: url(../fonts/BebasNeueBold.otf); }
+  
+  /* -------------------------------------------------------------------------*/
+  /* Table of Contents 
+-- Layout
+-- General
+-- Search
+-- Navigation
+-- Exhibits
+-- Items and Browse
+
+/* -------------------------------------------------------------------------*/
+  /* Layout */
+  /*#site-title {@include span-columns (7,12);}
+#search-container {@include span-columns (5 omega, 12);}
+#featured {@include span-columns (7,12);}
+.pagination {@include span-columns(12);}
+#sort-links {@include span-columns(12);}
+#recent-items {@include span-columns (5 omega, 12);}
+#advanced-search-form label,
+#advanced-search-form .label,
+.field .columns.alpha {@include span-columns (3,12);}
+#advanced-search-form .inputs,
+.field .columns.omega,
+.field .inputs,
+div#contribution-type-form div.inputs {@include span-columns (9 omega, 12);}*/
+  .exhibits #exhibit-pages:not(.full) { width: columns(4); display: inline-block; margin-right: 0; }
+  .full ~ #exhibit-blocks, .full ~ #exhibit-page-navigation { width: 100%; }
+  /* -------------------------------------------------------------------------*/
+  /* General */
+  .image { float: right; }
+  p { font-size: 1.8em; line-height: 1.6em; }
+  h1 { font-size: 2.16em; line-height: 1.6em; }
+  h2, #item-filters .collection, h3 { font-size: 1.8em; line-height: 1.6em; }
+  div.panel { padding: 2em; margin: 4em; width: 75%; }
+  /* -------------------------------------------------------------------------*/
+  /* Search */
+  /* -------------------------------------------------------------------------*/
+  /* Advanced Search Form */
+  #advanced-search-form .field .two label { width: 100% !important; }
+  #advanced-search-form .field label, #advanced-search-form .field .label, #advanced-search-form .field input, #advanced-search-form .field select, #advanced-search-form .field button { margin: 1em 0; }
+  /* -------------------------------------------------------------------------*/
+  /* Header */
+  #site-title { width: 100%; font-size: 3.96em; }
+  /* -------------------------------------------------------------------------*/
+  /* Navigation */
+  /*------------ Mega Menu Styles -----------*/
+  /* mega menu list */
+  /*** Adapted from Emiglio by Kim Nguyen ****/
+  /* mega menu list */
+  #top-nav .nav-menu { width: 100%; display: block; overflow: initial; position: relative; list-style: none; margin-left: 3em; padding: 0; z-index: 15; float: left; background-color: white; text-align: center; }
+  #top-nav .nav-menu li { width: auto; border: none; text-align: center; }
+  #top-nav .nav-menu li a { text-decoration: none; padding: .5em; display: inline-block; font-size: 1.98em; line-height: 1.6em; }
+  /* -------------------------------------------------------------------------*/
+  /* Exhibits */
+  .exhibits.summary #primary .exhibit-description, .exhibits.summary #primary .exhibit-credits { padding-right: 1em; }
+  .exhibits.summary #exhibit-pages { padding-top: 0; margin-top: 0; width: 100%; }
+  .exhibits.summary #exhibit-pages li a { font-size: 3.24em; border-bottom: 10px solid; }
+  .exhibits.show #exhibit-banner .panel.centered { width: 80%; margin-left: auto; margin-right: auto; margin-top: 4em; padding: 1em; }
+  .exhibits.show #exhibit-banner .panel.centered p { font-size: 1.8em; }
+  .exhibits.show #exhibit-banner .panel.centered a { font-size: 1.62em; }
+  .exhibits.show #exhibit-banner .panel.centered #exhibit-nav-next { margin-top: -3.6em; }
+  .exhibits.show #exhibit-banner #secondary-nav.exhibit-page-nav li { float: left; margin-top: .5em; }
+  .exhibits.show #exhibit-banner #secondary-nav.exhibit-page-nav li ul li { width: auto; }
+  .exhibits.show #exhibit-blocks { margin: 2em; }
+  .exhibits.show #exhibit-page-navigation-bottom { width: 100%; }
+  .exhibits.show #exhibit-page-navigation-bottom .current-page { font-size: 1.8em; }
+  .exhibits.show #exhibit-page-navigation-bottom a { font-size: 1.44em; }
+  /* -------------------------------------------------------------------------*/
+  /* Items and Browse */
+  .items #content, .collections #content { padding: 2em; font-size: 1.8em; }
+  .items #content .item-file, .collections #content .item-file { max-width: 100%; width: 100%; }
+  .items #content .item-file img, .collections #content .item-file img { width: 100%; }
+  .items #content .element-set, .collections #content .element-set { width: 100%; clear: both; }
+  .items #content nav, .collections #content nav { width: 100%; }
+  .items #content .item-pagination a, .collections #content .item-pagination a { font-size: 1.44em; } }
+
+@media screen and (min-device-width: 651px) and (max-device-width: 1024px) { @font-face { font-family: BebasNeueBold; src: url(../fonts/BebasNeueBold.otf); }
+  
+  /* -------------------------------------------------------------------------*/
+  /* Table of Contents 
+-- Layout
+-- General
+-- Search
+-- Navigation
+-- Exhibits
+-- Items and Browse
+
+/* -------------------------------------------------------------------------*/
+  /* Layout */
+  /*#site-title {@include span-columns (7,12);}
+#search-container {@include span-columns (5 omega, 12);}
+#featured {@include span-columns (7,12);}
+.pagination {@include span-columns(12);}
+#sort-links {@include span-columns(12);}
+#recent-items {@include span-columns (5 omega, 12);}
+#advanced-search-form label,
+#advanced-search-form .label,
+.field .columns.alpha {@include span-columns (3,12);}
+#advanced-search-form .inputs,
+.field .columns.omega,
+.field .inputs,
+div#contribution-type-form div.inputs {@include span-columns (9 omega, 12);}*/
+  .exhibits #exhibit-pages:not(.full) { width: columns(4); display: inline-block; margin-right: 0; }
+  .full ~ #exhibit-blocks, .full ~ #exhibit-page-navigation { width: 100%; }
+  /* -------------------------------------------------------------------------*/
+  /* General */
+  /* -------------------------------------------------------------------------*/
+  /* Search */
+  /* -------------------------------------------------------------------------*/
+  /* Header */
+  /* -------------------------------------------------------------------------*/
+  /* Navigation */
+  /* -------------------------------------------------------------------------*/
+  /* Exhibits */
+  /* -------------------------------------------------------------------------*/
+  /* Items and Browse */ }
+
+/* -------------------------------------------------------------------------*/
+/* Print */
+@media print { /* Print Styles */
+  body { font: 12px Georgia, "Palatino Linotype", "Book Antiqua", "Times New Roman", Times, serif; }
+  #content { width: 100%; margin: 0; float: none; }
+  h1, #site-title { font-size: 16pt; font-weight: bold; }
+  h2, #item-filters .collection { font-size: 14pt; font-style: italic; }
+  h3 { font-size: 14pt; }
+  h4 { font-weight: bold; }
+  h5 { font-weight: bold; font-style: italic; text-transform: uppercase; }
+  a:link:after { content: " (" attr(href) ") "; font-size: 80%; }
+  #search-container, #primary-nav, #header-image, .navigation, .pagination, #exhibit-page-navigation, .exhibit-section-nav, .exhibit-page-nav { display: none; }
+  blockquote { margin: 10pt 0 0 0; font-style: italic; } }
+
+/*# sourceMappingURL=css_sourcemaps/style.css.map */

@@ -1,0 +1,245 @@
+@import "susy";
+@import "base";
+//@import "compass";
+
+/* -------------------------------------------------------------------------*/
+/* Table of Contents 
+-- Layout
+-- General
+-- Search
+-- Navigation
+-- Exhibits
+-- Items and Browse
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+/*#site-title {@include span-columns (7,12);}
+#search-container {@include span-columns (5 omega, 12);}
+#featured {@include span-columns (7,12);}
+.pagination {@include span-columns(12);}
+#sort-links {@include span-columns(12);}
+#recent-items {@include span-columns (5 omega, 12);}
+#advanced-search-form label,
+#advanced-search-form .label,
+.field .columns.alpha {@include span-columns (3,12);}
+#advanced-search-form .inputs,
+.field .columns.omega,
+.field .inputs,
+div#contribution-type-form div.inputs {@include span-columns (9 omega, 12);}*/
+
+.exhibits.summary #primary,
+.exhibits.summary #content > h1:first-of-type,
+.exhibits.show #content > h1:first-of-type,
+#exhibit-blocks,
+#exhibit-page-navigation {
+  //  @include span-columns (8,12);
+}
+
+.exhibits #exhibit-pages:not(.full) {
+    width: columns(4);
+    display: inline-block;
+    margin-right: 0;
+}
+
+.full ~ #exhibit-blocks,
+.full ~ #exhibit-page-navigation {
+    width: 100%;
+}
+
+/* -------------------------------------------------------------------------*/
+/* General */
+
+.image {
+    float: right;
+}
+
+p {
+    font-size: $base-font-size-mobile;
+    line-height: $base-line-height-mobile;
+}
+
+h1 {
+    font-size: $base-font-size-mobile*1.2;
+    line-height: $base-line-height-mobile;
+ }
+
+h2, h3 {
+    font-size: $base-font-size-mobile;   
+    line-height: $base-line-height-mobile;
+
+}
+
+div.panel {
+    padding:2em;   
+    margin:4em;
+    width:75%;
+}
+
+/* -------------------------------------------------------------------------*/
+/* Search */
+
+
+/* -------------------------------------------------------------------------*/
+/* Advanced Search Form */
+#advanced-search-form .field {
+    .two label {
+        width: 100% !important;
+    }
+    label, 
+    .label, 
+    input, 
+    select, 
+    button {
+       margin: 1em 0;
+    }
+}
+
+/* -------------------------------------------------------------------------*/
+/* Header */
+
+#site-title {
+    width:100%;  
+    font-size: 2.2*$base-font-size-mobile;
+}
+/* -------------------------------------------------------------------------*/
+/* Navigation */
+
+/*------------ Mega Menu Styles -----------*/
+/* mega menu list */
+/*** Adapted from Emiglio by Kim Nguyen ****/
+/* mega menu list */
+#top-nav .nav-menu {
+    width: 100%;
+    display: block;
+    overflow: initial;
+    position: relative;
+    list-style: none;
+    margin-left:3em;
+    padding: 0;
+    z-index: 15;
+    float: left;
+    background-color: white; 
+    text-align: center;
+
+        
+    li {
+        width: auto;
+        border: none;
+        text-align: center;
+            a {
+        text-decoration: none;
+        padding: .5em;
+        display:inline-block;
+        font-size: $base-font-size-mobile*1.1;
+        line-height: $base-line-height-mobile;
+            }
+    }
+    
+
+}
+
+
+
+
+/* -------------------------------------------------------------------------*/
+/* Exhibits */
+
+.exhibits.summary #primary {
+    .exhibit-description, 
+    .exhibit-credits {
+        padding-right: 1em;
+    }
+}
+.exhibits.summary #exhibit-pages {
+    padding-top: 0;
+    margin-top: 0;
+    width:100%;
+    
+    li a {
+        font-size: 1.8*$base-font-size-mobile;
+        border-bottom: 10px solid;
+    }
+}   
+.exhibits.show {
+
+    #exhibit-banner {
+
+        .panel.centered {
+            width:80%;   
+            margin-left:auto;
+            margin-right:auto;
+            margin-top:4em;
+            padding:1em;
+            
+            p {
+                font-size: $base-font-size-mobile;  
+            }
+            
+            a {
+                font-size: $base-font-size-mobile*.9;
+            }
+            
+            #exhibit-nav-next {
+                margin-top: -3.6em;   
+            }
+            
+        }
+
+        #secondary-nav.exhibit-page-nav li {
+            float: left;
+            margin-top: .5em;
+            ul li {
+                width: auto;
+            }
+        }
+
+    }
+
+    #exhibit-blocks {
+        margin:2em;  
+    }
+    
+    #exhibit-page-navigation-bottom {
+        width:100%;   
+        
+        .current-page {font-size: $base-font-size-mobile;}
+
+        a {
+            font-size: $base-font-size-mobile*.8;
+        }   
+    }
+    
+}
+
+
+/* -------------------------------------------------------------------------*/
+/* Items and Browse */
+
+.items #content, .collections #content {
+    padding: 2em;
+    font-size: $base-font-size-mobile;
+    
+    .item-file {
+        max-width: 100%;
+        width: 100%;   
+        
+        img {
+            width:100%;
+        }
+    }
+    
+    .element-set {
+        width:100%;
+        clear:both;
+    }
+    
+    nav {
+        width: 100%;
+    }
+    .item-pagination {
+        
+        a {
+            font-size: $base-font-size-mobile*.8;   
+        }
+    }
+}

@@ -1,0 +1,76 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+//@import "susyone";
+
+// ---------------------------------------------------------------------------
+// Basic Grid
+
+$total-columns  : 12;
+$column-width   : 4em;
+$gutter-width   : 1em;
+$grid-padding   : $gutter-width;
+
+$show-grid-backgrounds: true;
+
+
+// ---------------------------------------------------------------------------
+// Color
+
+$background-color: #fff;
+$text-color: #000;
+
+$base-color: #fff;
+$accent-dark: #000;
+$accent-light: #B3B3B3;
+$accent-link: #993333;
+
+// ---------------------------------------------------------------------------
+// Typography
+
+$font-family-main: 'Georgia', 'Times New Roman', serif;
+$base-font-size: 16px;
+$base-line-height: 30px;
+
+$base-font-size-mobile: 1.8em;
+$base-line-height-mobile: 1.6em;
+
+
+@font-face {
+	font-family: BebasNeueBold;
+	src: url(../fonts/BebasNeueBold.otf);
+}  
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+$font-family-title: "BebasNeueBold", sans-serif;
+$font-family-secondary: "Libre Baskerville", serif;
+$font-family-navigation: "BebasNeueBold", sans-serif;
+// ---------------------------------------------------------------------------
+//Mobile
+
+$media-phone: "only screen and (max-width: 500px)";
+$media-tablet: "only screen and (min-device-width : 768px) and (max-device-width : 1024px)";
+
+// ---------------------------------------------------------------------------
+// Mixins
+
+@mixin link-button {
+    padding: 5px;
+    display: block;
+    background-color: lighten($grey-light, 5%);
+    margin-bottom: .5em;
+    &:hover {
+        background-color: $accent-main;
+        color: white;
+        text-decoration: none;
+   }
+   &:active {
+        background-color: $accent-light;
+   }
+}
+
+@mixin line-button {
+    &:before {
+        content: "\2014\0020";
+    }
+}
