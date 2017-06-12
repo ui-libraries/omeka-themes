@@ -31,11 +31,12 @@
 		
 				<div class="row">
 				
-					<div class="sixteen columns">
-					
+					<div class="sixteen columns ">					
 						<p>WILLIAM FRANKLIN BRINTON<br>
 							was the manager at the Ainsworth opera house, a public speaker, an inventor and overall Renaissance man. He built his house in Washinton Iowa to be heated with solar heat, and he invented and built airships, for which he built a landing strip on the roof of his house. Whether he actually flew the airships, much less landed any on his rooftop landing area, is questionable. He did, however, act as projectionist in an early movie house, and presented travelogues over his many journeys.</p>
-                            <img src="themes/brinton/images/tonight.png" alt="" />
+
+							<img class="ticket" src="themes/brinton/images/tonight.png" alt="" />
+						
 					</div><!-- end .sixteen columns -->
 			
 				</div><!-- end .row -->
@@ -61,7 +62,7 @@
 						
 						<p>In the late 19th and early 20th centuries, The Brinton Entertainment Co. of Washington, Iowa, would travel throughout the Midwest bringing films, magic lantern slides, and other forms of entertainment to populations who, in many cases, had never before seen such sights.</p>
 						
-						<a class="read-more-btn" href="films.html">View the entire collection &rarr;</a>
+						<a class="read-more-btn" href="<?php echo WEB_ROOT; ?>/collections/show/1">View the entire collection &rarr;</a>
 					
 					</div>
 					

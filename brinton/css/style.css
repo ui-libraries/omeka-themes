@@ -865,6 +865,10 @@ textarea.error {
     	width: 300px; 
     }
 
+	.ticket {
+		width: 90%;
+	}
+
 }
 
 /* Clearing (Clearfix)
@@ -3050,6 +3054,10 @@ ul.tabs li.active{
 		font-size: 12px;
 		line-height: .7;
 		padding: 10px 0 10px 10px;
+	}
+
+	.ticket {
+		width: 90%;
 	}
 
 }
