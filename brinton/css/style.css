@@ -524,7 +524,7 @@ textarea.error {
 }
 
 .container .sixteen.columns { 
-	width: 940px; 
+	width: 960px; 
 }
 
 .container .one-third.column { 
@@ -1265,7 +1265,7 @@ a.read-more-btn:hover {
 #introduction {
 	text-align: center;
 	color: #333;
-	padding: 20px 0;
+	padding: 18px 0;
 	border-top: medium double #666;
 	border-bottom: medium double #666;
 }
@@ -1276,22 +1276,13 @@ a.read-more-btn:hover {
 
 #introduction p {
 	font-family: "Oswald";
-	font-size: 25px;
+	font-size: 18px;
 	margin-bottom: 0;
 	line-height: 1.6;	
 	-webkit-mask-image: url(../images/mask.png); 
 	-o-mask-image: url(../images/mask.png); 
 	-moz-mask-image: url(../images/mask.png); 
 	mask-image: url(../images/mask.png);
-}
-
-#introduction p:first-of-type:first-line {	
-	color: #000;
-	font-size: 50px;
-	font-weight: bold;
-	letter-spacing: 0.1em;
-	line-height: 1.6;
-	text-transform: uppercase;
 }
 
 #introduction a {
@@ -1312,7 +1303,7 @@ a.read-more-btn:hover {
 }
 
 #introduction .section-heading h1 {
-	font-size: 23px;
+	font-size: 43px;
 	color: #333;
 	display: inline-block;
 	text-align: center;
@@ -1406,31 +1397,14 @@ a.read-more-btn:hover {
 /* Portfolio Items (Default 3 Column Layout) */
 
 .project-item {
+	width: 200px;
     list-style: none;
     margin-bottom: 20px;
     overflow: hidden;
     position: relative;
-    border: medium double #ccc;
-    -webkit-border-radius: 2px; 
-    -moz-border-radius: 2px; 
-    border-radius: 2px;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    -moz-transition: all .4s;
-    -webkit-transition: all .4s;
-    -o-transition: all .4s;
-    -ms-transition: all .4s;
-    transition: all .4s;
+
 }
     
-.project-item:hover {
-	background-color: rgba(255, 255, 255, .9);
-	-moz-box-shadow: 1px 1px 4px 1px #ccc;
-	-webkit-box-shadow: 1px 1px 4px 1px #ccc;
-	box-shadow: 1px 1px 4px 1px #ccc;
-}
-
 /* Portfolio/Project Items Overlay */
     
 .project-item .overlay {
@@ -1441,12 +1415,12 @@ a.read-more-btn:hover {
 	position: absolute;
 	top: 0;
 	overflow: hidden;
-	padding: 10px;
+	
 	text-align: center;
     -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: alpha(opacity=0);
     opacity: 0;
-    border: 15px solid rgba(255, 255, 255, 0);
+    
     -webkit-background-clip: padding-box; /* for Safari */
     background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
     -webkit-box-sizing: border-box;
@@ -1509,7 +1483,7 @@ a.read-more-btn:hover {
 /* (4 Column Portfolio Layout/Font Sizing Adjustments) */
 
 .four.columns .project-item h2 {
-	font-size: 17px;
+	font-size: 12px;
 }
 
 .four.columns .project-item  .read-more-btn {
@@ -1894,12 +1868,12 @@ a.read-more-btn:hover {
 /* Meet the Team Section
 --------------------------------------------------*/
 
-#meet-the-team {
+#brinton-films {
 	padding: 0 0 20px 0;
 	text-align: center;
 }
 
-#meet-the-team h2 {
+#brinton-films h2 {
 	text-transform: uppercase;
 	margin-bottom: 0;
 	-webkit-mask-image: url(../images/mask.png); 
@@ -1908,14 +1882,14 @@ a.read-more-btn:hover {
 	mask-image: url(../images/mask.png);
 }
 
-#meet-the-team em {
+#brinton-films em {
 	display: block;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	border-bottom: 1px dotted #ccc;
 }
 
-#meet-the-team .team-member {
+#brinton-films .team-member {
 	background-color: #fff;
 	background-color: rgba(255, 255, 255, .5);
 	margin-bottom: 20px;
@@ -1934,27 +1908,27 @@ a.read-more-btn:hover {
 	transition: all .4s;
 }
 
-#meet-the-team .team-member:hover {
+#brinton-films .team-member:hover {
 	background-color: rgba(255, 255, 255, .9);
 	-moz-box-shadow: 1px 1px 4px 1px #ccc;
 	-webkit-box-shadow: 1px 1px 4px 1px #ccc;
 	box-shadow: 1px 1px 4px 1px #ccc;
 }
 
-#meet-the-team .thumbnail {
+#brinton-films .thumbnail {
 	margin-bottom: 20px;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 }
 
-#meet-the-team img {
+#brinton-films img {
 	max-width: 100%;
 	height: auto;
 	display: block;
 }
 
-#meet-the-team .social-icons-small a [class^="icon-"] {
+#brinton-films .social-icons-small a [class^="icon-"] {
 	color: #e15154;
 	padding-right: 10px;
 	text-decoration: none;
@@ -1965,7 +1939,7 @@ a.read-more-btn:hover {
 	transition: all .4s;
 }
 
-#meet-the-team .social-icons-small a:hover [class^="icon-"] {
+#brinton-films .social-icons-small a:hover [class^="icon-"] {
 	color: #333;
 }
 
@@ -3370,3 +3344,19 @@ li[class^="icon-"].icon-large:before, li[class*=" icon-"].icon-large:before {
 .icon-paste:before                { content: "\f0ea"; }
 
 .icon-user-md:before              { content: "\f200"; }
+
+.video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.video-container iframe,
+.video-container object,
+.video-container embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}

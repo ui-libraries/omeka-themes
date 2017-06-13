@@ -34,7 +34,7 @@ $title = $collectionTitle . ' | ' . $itemTitle;
 					
 							<h1><span><?php echo $itemTitle; ?></span></h1>
 						
-							<p><?php echo $itemDescription; ?></p>
+							<p><span><?php echo $itemDescription; ?></span></p>
 					
 						</div>
 

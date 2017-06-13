@@ -29,15 +29,17 @@
 		
 			<div class="container">
 		
-				<div class="row">
+				<div class="row section-heading">
 				
 					<div class="sixteen columns ">					
-						<p>WILLIAM FRANKLIN BRINTON<br>
-							was the manager at the Ainsworth opera house, a public speaker, an inventor and overall Renaissance man. He built his house in Washinton Iowa to be heated with solar heat, and he invented and built airships, for which he built a landing strip on the roof of his house. Whether he actually flew the airships, much less landed any on his rooftop landing area, is questionable. He did, however, act as projectionist in an early movie house, and presented travelogues over his many journeys.</p>
-
-							<img class="ticket" src="themes/brinton/images/tonight.png" alt="" />
+						<i class="icon-star-empty icon-large"></i>
+						<h1><span>The Brinton Entertainment Co.</span></h1>
+							<p>The Brinton Collection contains films, slides, projectors, papers, and other documents from the life and career of William Franklin Brinton of Washington, IA. Brinton was an itinerant showman, travelling from Texas to Minnesota to project slides, film, and stage other entertainments during the years 1895-1909. He was also the manager of the Graham Opera House in Washington, which is still an active movie theater today and was recently declared the longest continually operating cinema in the world. Brinton was an eccentric and energetic individual, and the collection not only preserves some of the earliest commercially available film, it also contains material related to Brinton’s experimental interests, such as his passion for designing flying machines long before human flight became a reality.<br /><br />
+							The collection was preserved for many years by Michael Zahs, subject of the new documentary film <a href="http://brintonfilm.com/">Saving Brinton</a>. The collection was donated to the University of Iowa Libraries beginning in 2014.<br /><br />
+							This site will be developed as material in the collection is digitized. The collection is open for research and may be consulted by viewing the <a href="http://aspace.lib.uiowa.edu/repositories/2/resources/886">finding aid</a>.</p>
 						
 					</div><!-- end .sixteen columns -->
+					<img class="ticket" src="themes/brinton/images/tonight.png" alt="" />
 			
 				</div><!-- end .row -->
 		
@@ -49,7 +51,7 @@
 				
 			<div class="container">
 	
-		<section id="meet-the-team">
+		<section id="brinton-films">
 				
 			<div class="container">
 			
@@ -73,11 +75,11 @@
 					<div class="team-member one-third column">
 					
 						<div class="thumbnail">
-							<img src="themes/brinton/images/magician.png" alt="The Magician from Arabia" />
+							<a href="<?php echo WEB_ROOT; ?>/arabian-magician"><img src="themes/brinton/images/magician.png" alt="The Magician from Arabia" /></a>
 						</div>
 						
 						<i class="icon-star"></i>
-						<h2>Arabian Magician</h2>
+						<a href="<?php echo WEB_ROOT; ?>/arabian-magician"><h2>Arabian Magician</h2></a>
 						
 						<p><em>1906</em></p>					
 
@@ -87,11 +89,11 @@
 					<div class="team-member one-third column">
 					
 						<div class="thumbnail">
-							<img src="themes/brinton/images/golden_beetle.png" alt="The Golden Beetle" />
+							<a href="<?php echo WEB_ROOT; ?>/golden-beetle"><img src="themes/brinton/images/golden_beetle.png" alt="The Golden Beetle" /></a>
 						</div>
 						
 						<i class="icon-star"></i>
-						<h2>Golden Beetle</h2>
+						<a href="<?php echo WEB_ROOT; ?>/golden-beetle"><h2>Golden Beetle</h2></a>
 						
 						<p><em>1907</em></p>					
 
@@ -101,11 +103,11 @@
 					<div class="team-member one-third column">
 					
 						<div class="thumbnail">						
-							<img src="themes/brinton/images/serpentine_dance.png" alt="" />
+							<a href="<?php echo WEB_ROOT; ?>/bat-serpentine-dancer"><img src="themes/brinton/images/serpentine_dance.png" alt="" /></a>
 						</div>
 						
 						<i class="icon-star"></i>
-						<h2>Serpentine Dance</h2>
+						<a href="<?php echo WEB_ROOT; ?>/bat-serpentine-dancer"><h2>Serpentine Dance</h2></a>
 						
 						<p><em>1902</em></p>
 						

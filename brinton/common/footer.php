@@ -10,21 +10,14 @@
 			<div class="container">
 		
 				<div class="one-third column">
-				
-					<h3>Special Collections</h3>
-					
-					<p>The University of Iowa Libraries<br />
-						100 Main Library<br />
-						Iowa City, IA 52242-1420</p>
+
+				<a href="http://www.northlandfilms.com/"><img src="<?php echo WEB_ROOT; ?>/themes/brinton/images/northland-logo.png"/></a>
 				
 				</div>
 				
 				<div class="one-third column">
-				
-					<h3>Contact</h3>
-					
-					<p>319-335-5921<br />
-					<a href="mailto:lib-spec@uiowa.edu">lib-spec@uiowa.edu</a></p>
+				<br />
+				<a href="http://www.lib.uiowa.edu/sc/"><img src="<?php echo WEB_ROOT; ?>/themes/brinton/images/uidome-inverted.png"/></a>
 				
 				</div>
 				
@@ -32,8 +25,8 @@
 				
 					<h3>Questions?</h3>
 					
-					<p>Want to know more? Please <a href="">get in touch</a> with us today.</p>
-				
+					<p>Questions about the documentary? Please <a href="mailto:productions@northlandfilms.com">get in touch</a> with Northland Films.</p>
+					<p>Want to know more about the collection? Please <a href="mailto:lib-spec@uiowa.edu">contact</a> Special Collections & University Archives.</p></p>
 				</div>
 		
 			</div><!-- end .container -->

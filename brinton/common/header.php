@@ -59,7 +59,7 @@
 				
 				<div class="header-logo three columns">
 					
-					<div id="logo"><a href="index.html" title="University of Iowa Libraries"><img src="<?php echo WEB_ROOT; ?>/themes/brinton/images/uidome-uiwordmark-libraries-stacked.png" width="318" height="94" alt="Header Logo" /></a></div>
+					<div id="logo"><a href="https://lib.uiowa.edu" title="University of Iowa Libraries"><img src="<?php echo WEB_ROOT; ?>/themes/brinton/images/uidome-uiwordmark-libraries-stacked.png" width="318" height="94" alt="Header Logo" /></a></div>
 				  	
 				</div>
 				

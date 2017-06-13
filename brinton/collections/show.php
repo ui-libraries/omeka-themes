@@ -2,6 +2,7 @@
 $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 'Title')));
 $collectionDescription = strip_formatting(metadata('collection', array('Dublin Core', 'Description')));
 $collectionCreator = strip_formatting(metadata('collection', array('Dublin Core', 'Creator')));
+
 ?>
 
 <?php echo head(array('title'=> $collectionTitle, 'bodyclass' => 'collections show')); ?>
@@ -18,20 +19,28 @@ $collectionCreator = strip_formatting(metadata('collection', array('Dublin Core'
 		
 		</section><!-- end #page-feature-image -->
 		
-		<div class="container">
-			
+		<div class="container">			
 		
 			<section id="portfolio-items">
 				
 				<?php foreach (loop('items') as $item): ?>                       
                     <?php $itemTitle = strip_formatting(metadata('item', array('Dublin Core', 'Title'))); ?>
+                    <?php $itemSource = metadata('item', array('Dublin Core', 'Source')); ?>
+                    <?php $itemFormat = metadata('item', array('Dublin Core', 'Format')); ?>
                     <div class="four columns">					
                         <div class="project-item">
-                            <?php echo link_to_item(item_image('square_thumbnail', array('alt' => $itemTitle))); ?>
+                            <?php // echo link_to_item(item_image('square_thumbnail', array('alt' => $itemTitle))); ?>
+                            <?php echo item_image('square_thumbnail'); ?>
                             <div class="overlay">
                                 <div class="details">                                    
                                     <h2><?php echo $itemTitle; ?></h2>
-                                    <h6><?php echo link_to_item("View", array('class'=>'read-more-btn')); ?></h6>
+                                    <h6>
+                                    <?php if ($collectionTitle == "Films" || $itemFormat == "pdf") {
+                                        echo $itemSource;
+                                    } else {
+                                        echo link_to_item("View", array('class'=>'read-more-btn'));
+                                    } ?>
+                                    </h6>                                    
                                 </div>
                             </div>
                         </div><!-- end .project-item -->				
