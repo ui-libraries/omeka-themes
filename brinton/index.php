@@ -123,10 +123,4 @@
 									
 	</div><!-- end #main -->
 
-	
-	<div id="back-to-top" style="display: block;">
-				
-		<a href="#"></a>
-			
-	</div><!-- end #back-to-top -->
 <?php echo foot(); ?>
