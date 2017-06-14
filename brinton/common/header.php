@@ -4,8 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?php if ( $description = option('description')): ?>
-    <meta name="description" content="<?php echo $description; ?>" />
+    <meta name="description" content="<?php echo $description; ?>" />    
     <?php endif; ?>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <?php
     if (isset($title)) {
         $titleParts[] = strip_formatting($title);
@@ -20,8 +21,8 @@
 
     <?php fire_plugin_hook('public_head', array('view'=>$this)); ?>
 	
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Oswald">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 
     <!-- Stylesheets -->
     <?php
@@ -48,7 +49,7 @@
     echo head_js();
     ?>
 </head>
-<?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>    
+<?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyid)); ?>    
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
 
     <header id="header-global" role="banner">
