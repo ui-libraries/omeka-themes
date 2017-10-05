@@ -2,7 +2,8 @@
     $pageTitle = __('Browse Items');
     echo head(array('title'=>$pageTitle,'bodyclass' => 'items browse'));
 ?>
-
+	<div id="banner"></div>
+	<div class="container">
     <h1><?php echo 'Browse all items'; ?></h1>
     <?php $subnav = public_nav_items(); echo $subnav->setUlClass('nav nav-pills'); ?>
     <hr>    
@@ -70,4 +71,6 @@
     <?php echo pagination_links(); ?>
 
 <?php fire_plugin_hook('public_items_browse', array('items'=>$items, 'view' => $this)); ?>
+	</div>
+
 <?php echo foot(); ?>

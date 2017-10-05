@@ -1,7 +1,9 @@
 <?php 
-    echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show'));
-?>
-
+	$collection = get_collection_for_item();
+	$collection_id = 'collection'.metadata($collection, 'id');
+    echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show '.$collection_id));//items display the same banner as their parent collection.?>
+	<div id="banner"></div>
+	<div class="container">
     <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
 
     <div class="row">
@@ -64,5 +66,5 @@
         <li class="previous"><?php echo link_to_previous_item_show(); ?></li>
         <li class="next"><?php echo link_to_next_item_show(); ?></li>
     </ul>
-
+</div>
 <?php echo foot(); ?>

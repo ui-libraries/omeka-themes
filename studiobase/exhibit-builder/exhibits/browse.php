@@ -2,6 +2,9 @@
 $title = __('Browse Exhibits');
 echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 ?>
+<div id="banner">
+</div>
+<div class="container">
 <h1><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
 <?php if (count($exhibits) > 0): ?>
 
@@ -42,5 +45,6 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 <?php else: ?>
 <p><?php echo __('There are no exhibits available yet.'); ?></p>
 <?php endif; ?>
+</div>
 
 <?php echo foot(); ?>

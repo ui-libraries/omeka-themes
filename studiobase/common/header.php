@@ -41,15 +41,15 @@
 <?php echo body_tag(array('id' => @$bodyid, 'class' => @$bodyclass)); ?>
     <?php fire_plugin_hook('public_body', array('view'=>$this)); ?>
     <header role="banner">
-        <div class="container">
+        <div class="container-fluid">
             <?php fire_plugin_hook('public_header', array('view'=>$this)); ?>
-            <h1 class="site-title text-center"><?php echo link_to_home_page(theme_logo()); ?></h1>
-            <h5 class="text-center"><?php echo __('A Sample Omeka Theme'); ?></h5>
         </div>
 
-        <nav class="navbar navbar-default" role="navigation">
-            <div class="container">
+		<nav class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
                 <div class="navbar-header">
+					<h1 class="site-title"><?php echo link_to_home_page(theme_logo()); ?></h1>
+
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#primary-navigation">
                         <span class="sr-only">Menu</span>
                         <span class="icon-bar"></span>
@@ -61,13 +61,15 @@
                 <div class="collapse navbar-collapse" id="primary-navigation">
                     <?php echo public_nav_main_bootstrap(); ?>
 
-                    <form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
-                        <?php echo search_form(array('show_advanced' => false)); ?>
-                    </form>
+                    <!--<form class="navbar-form navbar-right" role="search" action="<?php echo public_url(''); ?>search">
+                        <?php //echo search_form(array('show_advanced' => false)); ?>
+                    </form>-->
                 </div>
             </div>
         </nav>
+		
+
     </header>
     <main id="content" role="main">
-      <div class="container">
+      <div class="container-fluid">
           <?php fire_plugin_hook('public_content_top', array('view'=>$this)); ?>

@@ -1,7 +1,11 @@
 <?php
+	$slug = 'collection'.metadata('collection', 'id');
     $collectionTitle = strip_formatting(metadata('collection', array('Dublin Core', 'Title')));
-    echo head(array('title'=> $collectionTitle, 'bodyclass' => 'collections show'));
+    echo head(array('title'=> $collectionTitle, 'bodyclass' => 'collections show '.$slug));
 ?>
+
+<div id="banner"></div>
+<div class="container">
     <h1><?php echo $collectionTitle; ?></h1>
     <?php echo all_element_texts('collection'); ?>
 
@@ -36,4 +40,5 @@
     </div><!-- end collection-items -->
 
 <?php fire_plugin_hook('public_collections_show', array('view' => $this, 'collection' => $collection)); ?>
+</div>
 <?php echo foot(); ?>
