@@ -6,3 +6,11 @@ function public_nav_main_bootstrap() {
     $nav->setPartial($partial);
     return $nav->render();
 }
+
+function public_nav_footer() {
+    $partial = array('common/footer-nav-partial.phtml', 'default');
+    $nav = public_nav_main();  // this looks like $this->navigation()->menu() from Zend
+    $nav->setPartial($partial);
+    return $nav->render();
+}
+

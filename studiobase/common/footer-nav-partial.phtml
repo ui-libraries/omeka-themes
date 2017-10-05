@@ -1,0 +1,14 @@
+<ul class="menu-foot">
+    <?php $count = 0 ?>
+    <?php foreach ($this->container as $page): ?>
+        <?php if( ! $page->isVisible() || !$this->navigation()->accept($page)) continue; ?>
+        <?php $hasChildren = $page->hasPages() ?>
+            <li <?php if($page->isActive()) echo 'class="active"'?> >
+                <a  href="<?php echo $page->getHref() ?>">
+                    <?php echo $this->translate($page->getLabel()) ?>
+                </a>
+            </li>
+
+        <?php $count++ ?>
+    <?php endforeach; ?>
+</ul>
