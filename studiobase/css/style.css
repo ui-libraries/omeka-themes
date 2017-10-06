@@ -17,7 +17,7 @@ Uses Bootstrap and Normalize.css.
 # Mixins
 # Typography
 # Colors
-# Elements
+# Basics
 # Navigation
 # Banners
 # Pages
@@ -203,9 +203,13 @@ Usage
 # Elements
 --------------------------------------------------------------*/
 /*--------------------------------------------------------------
-# Elements
+# Basics
 --------------------------------------------------------------*/
 body { width: 100%; margin: 0; }
+
+.container { padding-top: 3em; padding-bottom: 3em; }
+
+.row { margin: 2em 0; }
 
 /*--------------------------------------------------------------
 # Navigation
@@ -271,6 +275,8 @@ nav.navbar.navbar-default ul.nav.nav-pills ul.dropdown-menu { border: none; box-
 /*--------------------------------------------------------------
 # Items
 --------------------------------------------------------------*/
+.items.show #image-gallery img { max-width: 100%; }
+
 /*--------------------------------------------------------------
 # Exhibits
 --------------------------------------------------------------*/
