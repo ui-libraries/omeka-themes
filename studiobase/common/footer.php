@@ -4,7 +4,7 @@
         <hr>
         <div class="container-fluid">
 			<div class="col-sm-4 ui-logo">
-			<a href="http://lib.uiowa.edu"><img src="<?php echo WEB_THEME . '/studiobase/images/uidome-black.png'; ?>" alt="University of Iowa Libraries"/></a>
+			<a href="http://lib.uiowa.edu"><img src="<?php echo img('uidome-black.png'); ?>" alt="University of Iowa Libraries"/></a>
 			</div>
 			<div class="col-sm-4">
             <p class="text-center">

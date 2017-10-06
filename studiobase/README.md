@@ -13,3 +13,14 @@ If you have questions or comments, feel free to contact hello@interactivemechani
 ### Recent additions
 *  9/15/15: Added in a custom Zender partial for creating Bootstrap navigations (with dropdowns)
 *  3/11/15: Added in the latest version of Twitter Bootstrap
+
+### StudioBase notes
+-- Name changes --
+After copying, change name from studiobase to desired value in following locations:
+1. theme.ini
+2. package.json
+3. directory title
+
+-- Sass --
+Theme is preconfigured to compile Sass with Gulp.  May need to install NPM and dependencies before starting, node_modules not included.
+

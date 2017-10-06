@@ -4,9 +4,9 @@
 ?>
 <div id="banner"></div>
 <div class="container">
-    <h1><?php echo 'Browse all collections'; ?></h1>
+    <h1><?php echo 'Browse collections'; ?></h1>
     
-    <div class="browse-collections">
+    <div class="browse-collections clearfix">
         <?php if ($total_results > 0): ?>
         
             <?php foreach (loop('collections') as $collection): ?>

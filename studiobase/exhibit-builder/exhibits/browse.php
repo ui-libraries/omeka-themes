@@ -5,7 +5,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 <div id="banner">
 </div>
 <div class="container">
-<h1><?php echo $title; ?> <?php echo __('(%s total)', $total_results); ?></h1>
+<h1><?php echo $title; ?></h1>
 <?php if (count($exhibits) > 0): ?>
 
 <nav class="navigation secondary-nav">
@@ -22,6 +22,7 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
 </nav>
 
 <?php echo pagination_links(); ?>
+<div class="exhibits-browse clearfix">
 
 <?php $exhibitCount = 0; ?>
 <?php foreach (loop('exhibit') as $exhibit): ?>
@@ -40,11 +41,13 @@ echo head(array('title' => $title, 'bodyclass' => 'exhibits browse'));
     </div>
 <?php endforeach; ?>
 
+
 <?php echo pagination_links(); ?>
 
 <?php else: ?>
 <p><?php echo __('There are no exhibits available yet.'); ?></p>
 <?php endif; ?>
+</div>
 </div>
 
 <?php echo foot(); ?>
