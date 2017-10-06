@@ -220,7 +220,7 @@ nav.navbar.navbar-default { border: none; margin-bottom: 0; padding: 0 2em; bord
 
 @media only screen and (max-width: 400px) { nav.navbar.navbar-default h1 { font-size: 1em; } }
 
-nav.navbar.navbar-default ul.nav.nav-pills { margin-top: 1em; border: none; }
+nav.navbar.navbar-default ul.nav.nav-pills { margin-top: 1em; }
 
 nav.navbar.navbar-default ul.nav.nav-pills li a:active, nav.navbar.navbar-default ul.nav.nav-pills li a:hover, nav.navbar.navbar-default ul.nav.nav-pills li a.dropdown-toggle:active, nav.navbar.navbar-default ul.nav.nav-pills li a.dropdown-toggle:hover { background-color: transparent; border: 0; }
 
@@ -228,12 +228,18 @@ nav.navbar.navbar-default ul.nav.nav-pills li.dropdown.open { background-color: 
 
 nav.navbar.navbar-default ul.nav.nav-pills li.dropdown.open a { background-color: transparent; }
 
+nav.navbar.navbar-default ul.nav.nav-pills li.active { border: none; }
+
 nav.navbar.navbar-default ul.nav.nav-pills li.active a { background-color: transparent; }
 
-nav.navbar.navbar-default ul.dropdown-menu { border: none; box-shadow: none; border-radius: 0; margin-top: 0; }
+nav.navbar.navbar-default ul.nav.nav-pills ul.dropdown-menu { border: none; box-shadow: none; border-radius: 0; margin-top: 0; }
 
-/* Paging navs */
-@media only screen and (max-width: 400px) { #exhibit-page-navigation li a, .pager li a { width: 100%; margin-bottom: 1em; } }
+/* Paging navs for item and exhibit pages */
+.pager-nav { width: 100%; }
+
+.pager-nav .pager-arrow { text-align: center; line-height: 3em; }
+
+@media only screen and (max-width: 400px) { .pager-nav .pager-arrow a { width: 100%; margin-bottom: 1em; } }
 
 /* Footer nav */
 @media only screen and (max-width: 400px) { .footer-menu { display: none; } }

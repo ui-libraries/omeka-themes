@@ -1,7 +1,10 @@
 <?php 
-	$collection = get_collection_for_item();
-	$collection_id = 'collection'.metadata($collection, 'id');
-    echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => 'items show '.$collection_id));//items display the same banner as their parent collection.?>
+	$body_classes = 'items show';
+	if ($collection = get_collection_for_item()) {
+		$collection_id = 'collection'.metadata($collection, 'id');
+		$body_classes.= ' '.$collection_id;
+	} else { $body_classes.= ' no-collection'; }
+    echo head(array('title' => metadata('item', array('Dublin Core', 'Title')), 'bodyclass' => $body_classes));//items display the same banner as their parent collection.?>
 	<div id="banner"></div>
 	<div class="container">
     <h1><?php echo metadata('item', array('Dublin Core', 'Title')); ?></h1>
@@ -62,9 +65,8 @@
     </div>
     
     <?php fire_plugin_hook('public_items_show', array('view' => $this, 'item' => $item)); ?>
-    <ul class="pager">
-        <li class="previous"><?php echo link_to_previous_item_show(); ?></li>
-        <li class="next"><?php echo link_to_next_item_show(); ?></li>
-    </ul>
-</div>
+    <div id="item-pager-navigation" class="page-nav">
+        <div id="nav-prev" class="pager-arrow col-sm-6"><?php echo link_to_previous_item_show('Previous'); ?></div>
+        <div id="nav-next" class="pager-arrow col-sm-6"><?php echo link_to_next_item_show('Next'); ?></div>
+	</div>
 <?php echo foot(); ?>

@@ -18,14 +18,11 @@ nav.navbar.navbar-default {
         }
     
     h1 {
+        
         @include respond-to(handhelds) {
             font-size:1em;
-        }
-            
+        }  
     }
-    
-    a {
-    }   
 
 
     ul.nav.nav-pills {
@@ -55,46 +52,44 @@ nav.navbar.navbar-default {
         
         
         li.active {
+            border:none;
+            
             a {
                background-color:transparent;
-             
-                 &:active, &:hover {
+                &:active, &:hover {
 
                 }
-
             }
         }
 
-
-
+        ul.dropdown-menu {
             border:none;
-        }
-    
+            box-shadow: none;
+            border-radius:0;
+            margin-top:0;
+            li a {
 
-    ul.dropdown-menu {
-        border:none;
-        box-shadow: none;
-        border-radius:0;
-        margin-top:0;
-        li a {
-           
+            }
         }
-
     }
- }
+}
 
 
 
-/* Paging navs */
+/* Paging navs for item and exhibit pages */
 
-#exhibit-page-navigation, .pager {
+.pager-nav {
     
+    width:100%;
     
-    li {
+    .pager-arrow {
+        text-align: center;
+        line-height: 3em;
         
         a {
 
             &:hover, &:active {
+                
             }
             
             @include respond-to(handhelds) {
@@ -102,10 +97,9 @@ nav.navbar.navbar-default {
                 margin-bottom:1em;
             }
         }
-        
-        
     }    
 }
+
 
 /* Footer nav */
 

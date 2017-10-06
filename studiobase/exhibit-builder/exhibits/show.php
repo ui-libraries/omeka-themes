@@ -22,18 +22,18 @@ echo head(array(
 
 
 </div>
-<div id="exhibit-page-navigation" class="container-fluid">
-    <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
-    <div id="exhibit-nav-prev" class="col-sm-4 exhibit-arrow-nav">
+<div id="exhibit-pager-navigation" class="container-fluid pager-nav">
+    <?php if ($prevLink = studiobase_exhibit_builder_link_to_previous_page()): ?>
+    <div id="nav-prev" class="col-sm-4 pager-arrow">
     <?php echo $prevLink; ?>
     </div>
     <?php endif; ?>
-    <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
-    <div id="exhibit-nav-next" class="col-sm-4 exhibit-arrow-nav">
+    <?php if ($nextLink = studiobase_exhibit_builder_link_to_next_page()): ?>
+    <div id="nav-next" class="col-sm-4 pager-arrow">
     <?php echo $nextLink; ?>
     </div>
     <?php endif; ?>
-    <div id="exhibit-nav-up" class="col-sm-4 exhibit-arrow-nav">
+    <div id="nav-up" class="col-sm-4 pager-arrow">
     <?php echo exhibit_builder_page_trail(); ?>
     </div>
 </div>
