@@ -32,7 +32,7 @@ $title = $collectionTitle . ' | ' . $itemTitle;
 					
 						<div class="eleven columns alpha">
 					
-							<h1><span><?php echo $itemTitle; ?></span></h1>
+							<h2><strong><span><?php echo $itemTitle; ?></span></strong></h2>
 						
 							<p><span><?php echo $itemDescription; ?></span></p>
 					

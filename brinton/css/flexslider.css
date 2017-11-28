@@ -44,6 +44,7 @@ html[xmlns] .slides {display: block;}
 #main-slider.flexslider .slides img {
 	border-top: 3px solid #333; 
 	border-bottom: 3px solid #333;
+	width: 100%;
 }
 
 .flexslider {background: none; position: relative; width: 100%; zoom: 1; margin-bottom: 0; z-index: 0;

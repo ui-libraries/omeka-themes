@@ -3006,7 +3006,8 @@ ul.tabs li.active{
 		-webkit-mask-image: none; 
 		-o-mask-image: none; 
 		-moz-mask-image: none; 
-		mask-image: none; 
+		mask-image: none;
+		font-size: 20px;
 	}
 	
 	#client-logos {

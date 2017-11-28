@@ -1,7 +1,6 @@
 // When DOM is fully loaded
 jQuery(document).ready(function ($) {
 	
-	
 	/* FlexSlider
 	--------------------------------------------------*/
 	
@@ -49,41 +48,9 @@ jQuery(document).ready(function ($) {
 	    asNavFor            : "",                //{NEW} Selector: Internal property exposed for turning the slider into a thumbnail navigation for another slider
 	});
 	
-	/* Quote/Testimonials Rotator
-	--------------------------------------------------*/
 
-	$('ul#quotes').quote_rotator();
-
-	/* FancyBox Image Lightbox
-	--------------------------------------------------*/
 	
-	$(".fancybox").fancybox();
-
-	/* FitVids Responsive Video
-	--------------------------------------------------*/
-
-	$(".container").fitVids();
-	    
-		
-	/* Back to Top Button
-	--------------------------------------------------*/
 	
-	$("#back-to-top").hide();
-	$(function () {
-	    $(window).scroll(function () {
-	        if ($(this).scrollTop() > 100) {
-	            $('#back-to-top').fadeIn();
-	        } else {
-	            $('#back-to-top').fadeOut();
-	        }
-	    });
-	    $('#back-to-top a').click(function () {
-	        $('body,html').animate({
-	            scrollTop: 0
-	        }, 800);
-	        return false;
-	    });
-	});
 	    
 	/* Header Navigation
 	--------------------------------------------------*/
@@ -115,62 +82,9 @@ jQuery(document).ready(function ($) {
 	    $(this).siblings().removeClass("fade");
 	});
 	
-	/* Isotope (http://isotope.metafizzy.co)
-	--------------------------------------------------*/
-	
-	$(window).load(function () {
-	    var $container = $('#portfolio-items');
-	    var $filter = $('#filter');
-	    // Initialize isotope 
-	    $container.isotope({
-	        filter: '*',
-	        layoutMode: 'fitRows',
-	        animationOptions: {
-	            duration: 750,
-	            easing: 'linear'
-	        }
-	    });
-	    // Filter items when filter link is clicked
-	    $filter.find('a').click(function () {
-	        var selector = $(this).attr('data-filter');
-	        $filter.find('a').removeClass('current');
-	        $(this).addClass('current');
-	        $container.isotope({
-	            filter: selector,
-	            animationOptions: {
-	                animationDuration: 750,
-	                easing: 'linear',
-	                queue: false,
-	            }
-	        });
-	        return false;
-	    });
-	});
+
 		
-	/* Accordion Widget
-	--------------------------------------------------*/
-	
-	//Add Inactive Class To All Accordion Headers
-	$('.accordion-header').toggleClass('inactive-header');
-	//Set The Accordion Content Width
-	var contentwidth = $('.accordion-header').width();
-	$('.accordion-content').css({
-	    'width': contentwidth
-	});
-	//Open The First Accordion Section When Page Loads
-	$('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
-	$('.accordion-content').first().slideDown().toggleClass('open-content');
-	// The Accordion Effect
-	$('.accordion-header').click(function () {
-	    if ($(this).is('.inactive-header')) {
-	        $('.active-header').toggleClass('active-header').toggleClass('inactive-header').next().slideToggle().toggleClass('open-content');
-	        $(this).toggleClass('active-header').toggleClass('inactive-header');
-	        $(this).next().slideToggle().toggleClass('open-content');
-	    } else {
-	        $(this).toggleClass('active-header').toggleClass('inactive-header');
-	        $(this).next().slideToggle().toggleClass('open-content');
-	    }
-	});
+
 			
 	/* Tabbed Content Widget
 	--------------------------------------------------*/
@@ -185,56 +99,7 @@ jQuery(document).ready(function ($) {
 	    $("#" + activeTab).fadeIn();
 	});
 	
-	/* Contact Form
-	--------------------------------------------------*/
-
-	// Validate the contact form
-	$('#contact-form').validate({
-	    // Add requirements to each of the fields
-	    rules: {
-	        name: {
-	            required: true,
-	            minlength: 2
-	        },
-	        email: {
-	            required: true,
-	            email: true
-	        },
-	        message: {
-	            required: true,
-	            minlength: 10
-	        }
-	    },
-	    // Specify what error messages to display
-	    // when the user does something horrid
-	    messages: {
-	        name: {
-	            required: "Please enter your name.",
-	            minlength: jQuery.format("At least {0} characters required.")
-	        },
-	        email: {
-	            required: "Please enter your email.",
-	            email: "Please enter a valid email."
-	        },
-	        message: {
-	            required: "Please enter a message.",
-	            minlength: jQuery.format("At least {0} characters required.")
-	        }
-	    },
-	    // Use Ajax to send everything to php/form.php
-	    submitHandler: function (form) {
-	        $("#submit").attr("value", "Sending...");
-	        $(form).ajaxSubmit({
-	            target: "#response",
-	            success: function (responseText, statusText, xhr, $form) {
-	                $(form).slideUp("fast");
-	                $("#response").html(responseText).hide().slideDown("fast");
-	            }
-	        });
-	        return false;
-	    }
-	});
-		
+	
 	/* Overlay Vertical Alignment
 	--------------------------------------------------*/
 
