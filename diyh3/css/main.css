@@ -1,0 +1,64 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+@font-face {
+    font-family: Gotham;
+    src: url(img/Gotham-Bold.otf);
+}
+
+   body {
+  font-family: 'Gotham', sans-serif;
+}
+
+.container {
+  background-color: white;
+}
+
+#transcribe-count {
+  font-size: 48px;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+#menu {
+  background-color: #2D154C;
+  margin-top: 50px;
+}
+
+#menu {
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.menu-item {
+  padding: 25px;
+  font-size: 24px;
+}
+.menu-link:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
