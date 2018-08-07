@@ -5,10 +5,15 @@
    ========================================================================== */
 @font-face {
     font-family: Gotham;
-    src: url(img/Gotham-Bold.otf);
+    src: url(../fonts/Gotham-Bold.otf);
 }
 
-   body {
+@font-face {
+  font-family: Gotham-Book;
+  src: url(../fonts/Gotham-Book.otf);
+}
+
+body {
   font-family: 'Gotham', sans-serif;
 }
 
@@ -46,6 +51,47 @@ a {
 
 a:hover {
   color: white;
+}
+
+#featured {  
+  width: 80%;
+  height: 300px;
+  border: 10px solid #7F055F;
+  float: none;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+#history {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #2D154C;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  color: white;
+  text-align: center;
+  font-size: 48px;  
+}
+
+#description {
+  color: black;
+  width: 80%;
+  font-family: 'Gotham-Book', sans-serif;
+  font-size: 36px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.header {
+  font-size: 48px;
+}
+
+#war-diaries {
+  background-color: #26375E;
+}
+
+#early-ia {
+  background-color: #F18F01;
 }
 
 
