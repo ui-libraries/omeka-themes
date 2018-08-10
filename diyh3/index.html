@@ -15,72 +15,222 @@
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
+        <script src="">//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js</script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <div class="container">
-        <img src="img/logo.svg">
-        <div id="transcribe-count" class="text-center">PAGES TRANSCRIBED: 87,823</div>
-        <div id="menu" class="container">
-            <div class="row text-center">
-                <div class="col-md-3 menu-item">
-                    <a href="" class="menu-link">transcribe</a>
-                </div>  
-            
-                <div class="col-md-3 menu-item">
-                        <a href="" class="menu-link">about</a>
-                </div>  
-            
-                <div class="col-md-3 menu-item">
-                        <a href="" class="menu-link">press</a>
-                </div>  
-            
-                <div class="col-md-3 menu-item">
-                        <a href="" class="menu-link">login</a>
-                </div>            
-            </div>  <!-- end of row -->                
-        </div>
-        <div id="featured"></div>
-        <div id="history">Help us make history!</div>
-        <div id="description">DIY History is a crowdsourced volunteer project from the University of Iowa’s Digital Library. Register or Login to start transcribing.</div>
-        <div id="topics" class="container">
-                <div class="row text-center">
-                    <span class="header">TRANSCRIBE BY TOPIC<span>                    
-                </div>
-                <div class="row">
-                    <div id="war-diaries" class="col-md-6">
-                            <img src="img/war-white.svg">
-                    </div>
-                    <div id="early-ia" class="col-md-6">
-                            <img src="img/early-ia-white.svg">
-                    </div>
-                </div>
-                <div class="row"></div>  
-                <div class="row"></div>  
-                <div class="row"></div>         
-            </div>
-        <footer>        
-        </footer>
-    </div> <!-- /container -->        
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
 
         <script src="js/main.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+            //(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            //function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            //e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            //e.src='//www.google-analytics.com/analytics.js';
+            //r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            //ga('create','UA-XXXXX-X','auto');ga('send','pageview');
         </script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header>
+          <a href="index.html"><img id="header-image" src="img/logo.svg"></a>
+          <div id="transcribe-count" class="text-center">PAGES TRANSCRIBED: 87,823</div>
+          <div id="menu" class="container">
+              <div class="row text-center">
+                  <div class="col-md-3 menu-item">
+                      <a href="" class="menu-link">transcribe</a>
+                  </div>
+
+                  <div class="col-md-3 menu-item">
+                          <a href="about.html" class="menu-link">about</a>
+                  </div>
+
+                  <div class="col-md-3 menu-item">
+                          <a href="" class="menu-link">press</a>
+                  </div>
+
+                  <div class="col-md-3 menu-item">
+                          <a href="" class="menu-link">login</a>
+                  </div>
+              </div>  <!-- end of row -->
+          </div>
+        </header>
+
+    <div id="home-page" class="container">
+        <div id="featured">
+          <div class="float-left col-md-6">
+            <img src="img/test-image.png">
+          </div>
+          <div class="float-right col-md-6">
+            <div id="featured-category-icon">
+              <img src="img/hevelin-color.svg">
+            </div>
+            <h2>Hevelin Fanzines</h2>
+            <h3>This month's Featured collection is the SF, Fantasy, and horror fanzines collected by Rusty Hevelin.</h3>
+            <h3>Check out the materials and help transcribe more pages.</h3>
+
+          </div>
+        </div>
+        <div id="history">Help us make history!</div>
+        <div id="description">DIY History is a crowdsourced volunteer project from the University of Iowa’s Digital Library. Register or Login to start transcribing.</div>
+        <div id="topics" class="container">
+                <div class="row text-center">
+                    <span class="header">TRANSCRIBE BY TOPIC</span>
+                </div>
+                <div class="row">
+                    <div id="war-diaries" class="col-md-6">
+                      <a href="category.html">
+                        <div class="topic">
+                            <img src="img/war-white.svg">
+                            <h2>War Diaries and Letters</h2>
+                      </div>
+                    </a>
+                  </div>
+                    <div id="early-ia" class="col-md-6">
+                      <div class="topic">
+                            <img src="img/early-ia-white.svg">
+                            <h2>Early Iowa Lives</h2>
+                     </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="univ-life" class="col-md-6">
+                    <div class="topic">
+                          <img src="img/univ-life-white.svg">
+                          <h2>University Life</h2>
+                    </div>
+                  </div>
+                  <div id="social-justice" class="col-md-6">
+                    <div class="topic">
+                          <img src="img/social-justice-white.svg">
+                          <h2>Social Justice</h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="early-manuscript" class="col-md-6">
+                    <div class="topic">
+                          <img src="img/early-manuscripts-white.svg">
+                          <h2>Early manuscripts</h2>
+                    </div>
+                  </div>
+                  <div id="keith-albee-collection" class="col-md-6">
+                    <div class="topic">
+                          <img src="img/keith-albee-white.svg">
+                          <h2>Keith-Albee Collection</h2>
+                      </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div id="hevelin-fanzines" class="col-md-6">
+                    <div class="topic">
+                          <img src="img/hevelin-white.svg">
+                          <h2>Hevelin Fanzines</h2>
+                    </div>
+                  </div>
+                  <div id="szathmary" class="col-md-6">
+                    <div class="topic">
+                          <img id="z-image"src="img/szathmary-white.svg">
+                          <h2>zathmary Mss and Cookbooks</h2>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+    </div> <!-- /container -->
+
+    <footer>
+      <div id="footer" class="container">
+        <div class="row">
+              <img id="ui-logo" src="img/ui-libraries-logo.svg" class="col-md-2">
+              <img id="rss-logo" src="img/rss-white.svg" class="col-md-1">
+              <img id="twitter-logo" src="img/twitter-white.svg" class="col-md-1">
+              <div class="col-md-5"></div>
+              <div id="footer-links" class="col-md-3">
+                <div class="menu-item">
+                  <a href="" class="menu-link">Contact</a>
+                </div>
+                <div class="menu-item">
+                  <a href="" class="menu-link">Transcription Tips</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    </footer>
+    <script>
+    //Transcription topic hover effects
+    $('#war-diaries').hover(function() {
+        $(this).find('img').attr('src', 'img/war-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#26375E", "border":"5px solid #26375E"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/war-white.svg')
+        $(this).find('.topic').css({"background-color":"#26375E", "color":"white", "border":"none"})
+    });
+
+    $('#early-ia').hover(function() {
+        $(this).find('img').attr('src', 'img/early-ia-lives-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#F18F01", "border":"5px solid #F18F01"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/early-ia-white.svg')
+        $(this).find('.topic').css({"background-color":"#F18F01", "color":"white", "border":"none"})
+    });
+
+    $('#univ-life').hover(function() {
+        $(this).find('img').attr('src', 'img/univ-life-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#D33C1E", "border":"5px solid #D33C1E"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/univ-life-white.svg')
+        $(this).find('.topic').css({"background-color":"#D33C1E", "color":"white", "border":"none"})
+    });
+
+    $('#social-justice').hover(function() {
+        $(this).find('img').attr('src', 'img/social-justice-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#086277", "border":"5px solid #086277"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/social-justice-white.svg')
+        $(this).find('.topic').css({"background-color":"#086277", "color":"white", "border":"none"})
+    });
+
+    $('#early-manuscript').hover(function() {
+        $(this).find('img').attr('src', 'img/early-manuscripts-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#08874D", "border":"5px solid #08874D"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/early-manuscripts-white.svg')
+        $(this).find('.topic').css({"background-color":"#08874D", "color":"white", "border":"none"})
+    });
+
+    $('#keith-albee-collection').hover(function() {
+        $(this).find('img').attr('src', 'img/keith-albee-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#D81159", "border":"5px solid #D81159"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/keith-albee-white.svg')
+        $(this).find('.topic').css({"background-color":"#D81159", "color":"white", "border":"none"})
+    });
+
+    $('#hevelin-fanzines').hover(function() {
+        $(this).find('img').attr('src', 'img/hevelin-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#7F055F", "border":"5px solid #7F055F"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/hevelin-white.svg')
+        $(this).find('.topic').css({"background-color":"#7F055F", "color":"white", "border":"none"})
+    });
+
+    $('#szathmary').hover(function() {
+        $(this).find('img').attr('src', 'img/szathmary-color.svg')
+        $(this).find('.topic').css({"background-color":"white", "color":"#17A5C6", "border":"5px solid #17A5C6"})
+      }, function() {
+        $(this).find('img').attr('src', 'img/szathmary-white.svg')
+        $(this).find('.topic').css({"background-color":"#17A5C6", "color":"white", "border":"none"})
+    });
+    </script>
+
     </body>
 </html>
