@@ -13,26 +13,44 @@
   src: url(../fonts/Gotham-Book.otf);
 }
 
-body {
+body, .container {
   font-family: 'Gotham', sans-serif;
+  overflow-x: hidden;
+
 }
 
-.container {
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
+}
+
+.container{
   background-color: white;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+header{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#header-image{
+  width: 50%;
 }
 
 #transcribe-count {
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 30px;
+  font-weight:lighter ;
   margin-top: 50px;
+  color: #2D154C;
 }
 
 #menu {
   background-color: #2D154C;
-  margin-top: 50px;
-}
-
-#menu {
   list-style-type: none;
   text-transform: uppercase;
 }
@@ -53,13 +71,42 @@ a:hover {
   color: white;
 }
 
-#featured {  
+#featured {
   width: 80%;
-  height: 300px;
+  height: 500px;
   border: 10px solid #7F055F;
   float: none;
   margin: 0 auto;
   margin-top: 25px;
+  overflow: hidden;
+}
+
+#featured .float-left{
+  overflow: hidden;
+  padding:0px;
+  height: 100%;
+}
+#featured .float-left img{
+  width:100%;
+}
+
+#featured .float-right{
+  padding:50px;
+  height: 100%;
+  text-align: center;
+}
+
+#featured-category-icon{
+  height:20%;
+  margin-bottom: 50px;
+}
+
+#featured-category-icon img{
+  height: 100px;
+}
+
+#featured .float-right h2{
+  color: #7F055F;
 }
 
 #history {
@@ -70,7 +117,8 @@ a:hover {
   margin-bottom: 30px;
   color: white;
   text-align: center;
-  font-size: 48px;  
+  font-size: 48px;
+  padding:10px;
 }
 
 #description {
@@ -82,29 +130,169 @@ a:hover {
   margin: 0 auto;
 }
 
+#topics{
+  margin-top:50px;
+}
 .header {
   font-size: 48px;
+  color: #2D154C;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-align: center;
 }
 
-#war-diaries {
+.topic {
+  padding:50px;
+  text-align: center;
+  height: 300px;
+  color: white;
+  text-transform: uppercase;
+}
+.topic img{
+  width: 40%;
+}
+
+#topics .col-md-6{
+  padding: 15px;
+}
+#war-diaries .topic {
   background-color: #26375E;
 }
 
-#early-ia {
+#early-ia .topic{
   background-color: #F18F01;
 }
 
+#univ-life .topic{
+  background-color: #D33C1E;
+}
 
+#social-justice .topic{
+  background-color: #086277;
+}
 
+#early-manuscript .topic{
+  background-color: #08874D;
+}
 
+#keith-albee-collection .topic{
+  background-color: #D81159;
+}
 
+#hevelin-fanzines .topic{
+  background-color: #7F055F;
+}
 
+#szathmary .topic{
+  background-color: #17A5C6;
+}
 
+/*Footer Css*/
+#footer{
+  height:225px;
+  background-color: #2D154C;
+  margin-top:50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding:50px;
+}
+#footer .float-right{
+  width: 30%;
+  height: 100%;
+}
+#footer .menu-item{
+  float: right;
+  padding: 0px;
+}
 
+#ui-logo{
+  height: 125px;
+}
+#rss-logo{
+  height: 50px;
+  margin-top: auto;
+  margin-bottom:auto;
+}
+#twitter-logo{
+  height: 50px;
+}
 
+/*About Page Css*/
+#about h1{
+  text-align: center;
+}
+#about h1, #about h2{
+  color: #2D154C;
+}
+#about a{
+  color: #2D154C;
+  text-decoration: underline;
+}
 
+/*Category Page*/
+#category-icon{
+  width: 100%;
+  text-align: center;
+}
+#category-icon img{
+  height: 100px;
+}
 
+.topic-specific{
+  overflow: hidden;
+  padding:0px;
+  height: 350px;
+}
+.topic-specific h3{
+  position: relative;
 
+}
+#category .row{
+  margin: 50px;
+}
 
+/*Media Queries below*/
+@media only screen and (max-width: 380px) {
+  #home-page.container, #topics.container, #menu.container, #footer.container{
+    width: 100%;
+    padding:0px;
+    margin: 50px 0px 0px 0px;
+  }
+  #footer.container{
+    padding: 50px;
+  }
+}
 
+@media only screen and (min-width: 381px) and (max-width: 1024px) {
+  #home-page.container, #topics.container, #menu.container, #footer.container{
+    width: 100%;
+    padding:0px;
+    margin: 50px 0px 0px 0px;
+  }
+  #footer.container{
+    padding: 50px;
+  }
+}
 
+@media only screen and (min-width: 1025px)
+and (max-width: 2399px) {
+
+}
+
+@media only screen and (min-width: 2400px)
+and (max-width: 5000px) {
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape)
+and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+@media all and (-ms-high-contrast: none),
+       (-ms-high-contrast: active) {
+    /*IE10+ CSS styles go here*/
+
+}
