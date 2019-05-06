@@ -292,4 +292,48 @@ textarea {
     }
 }
 
+body {
+    font-family: 'Miriam Libre', sans-serif;
+    margin: 5%;
+}
+
+.navbar {
+    background-color: white;
+}
+
+a {
+    color: black;
+}
+
+#iri-logo {
+    width: 100%;
+}
+
+.navbar-nav {
+    list-style-type: none;
+    margin: 5%;
+    font-size: 30px;
+}
+
+#searchbox {
+    position: relative;
+    float: right;
+    top: 72%;
+    right:0;
+    left:0;
+}
+
+  #submit_search {
+    background-color: #FFCD00 !important;
+    border-top: 2px solid #FFCD00;
+    border-bottom: 1px solid #FFCD00;
+    border-right: 2px solid #FFCD00;
+    height: 110%;
+    margin: -2px;
+  }
+  
+  .input-group {
+    border: 2px solid #FFCD00;
+    border-radius: 0 !important;
+  }
 
