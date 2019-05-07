@@ -294,14 +294,19 @@ textarea {
 
 body {
     font-family: 'Miriam Libre', sans-serif;
-    margin: 5%;
+    
 }
 
 .navbar {
     background-color: white;
+    margin-top: 5%;
 }
 
 a {
+    color: black;
+}
+
+a:hover {
     color: black;
 }
 
@@ -346,6 +351,11 @@ a {
       color: white;
   }
 
+  .dropdown-item {
+      text-align: right;
+      font-size: 20px;
+  }
+
 .next-button {
     width: 40px;
     margin-top: 70px;
@@ -354,4 +364,15 @@ a {
 .prev-button {
     width: 40px;
     margin-top: 70px;
+}
+
+footer {
+    background-color: black;
+    height: 150px;
+}
+
+#studio-logo {
+    margin-left: 45%;
+    width: 8%;
+    padding-top: 30px;
 }
