@@ -341,8 +341,9 @@ a {
       background-color: #FFCD00;
   }
 
-  a.dropdown-item {
+  .dropdown-menu a:hover {
       background-color: #FFCD00;
+      color: white;
   }
 
 .next-button {
