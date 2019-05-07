@@ -337,3 +337,20 @@ a {
     border-radius: 0 !important;
   }
 
+  .dropdown-menu {
+      background-color: #FFCD00;
+  }
+
+  a.dropdown-item {
+      background-color: #FFCD00;
+  }
+
+.next-button {
+    width: 40px;
+    margin-top: 70px;
+}
+
+.prev-button {
+    width: 40px;
+    margin-top: 70px;
+}
