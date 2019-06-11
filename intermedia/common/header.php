@@ -89,7 +89,7 @@
                <ul class="navbar-nav mr-auto">
                   <div class="col">
                      <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                        <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown01">
                            <a class="dropdown-item" href="<?php echo WEB_ROOT; ?>/history">History</a>
                            <a class="dropdown-item" href="<?php echo WEB_ROOT; ?>/project">Project</a>
@@ -105,7 +105,7 @@
                   </div>
                   <div class="col">
                      <li class="nav-item">
-                        <a class="nav-link" href="#">Collection</a>
+                        <a class="nav-link" href="<?php echo WEB_ROOT; ?>/items/browse">Collection</a>
                      </li>
                   </div>
                   <div class="col">
