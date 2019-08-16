@@ -111,7 +111,7 @@ function bootstrapAddExternalLinks($nav)
         'facebook' => get_theme_option('Link Facebook'),
     );
     $externalLinks = '';
-    $baseLink = '<li><a href="%s" target="__blank" class="navbar-link"><span class="fa fa-lg fa-%s"></span></a></li>';
+    $baseLink = '<li><a href="%s" class="navbar-link"><span class="fa fa-lg fa-%s"></span></a></li>';
 
     $navBootstrap = array_filter($navBootstrap);
     foreach ($navBootstrap as $label => $uri) {

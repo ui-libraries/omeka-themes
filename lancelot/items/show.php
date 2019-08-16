@@ -90,24 +90,7 @@ else:
             </div>
         </div>
         <!-- The following returns all of the files associated with an item. -->
-        <div id="itemfiles" class="col-md-6">
-            <?php if (metadata($item, 'has files')): ?>
-            <h3><?php echo metadata($item, 'file_count') == 1 ? __('File') : __('Files'); ?></h3>
-            <div class="element-text"><?php echo custom_files_for_item(
-                // This might be easier for future customization: https://omeka.org/codex/Display_Specific_Metadata_for_an_Item_File
-                //options
-                array(
-                    'imageSize' => 'fullsize',
-                    'linkToFile' => true,
-                    'linkToMetadata'=>false,
-                    'imgAttributes' => array('class' => 'img-responsive'),
-                ),
-                // wrapper
-                array('class' => 'file-image'),
-                null);
-            ?></div>
-            <?php endif; ?>
-        </div>
+       
     </div>
 <?php endif; ?>
     <br />
