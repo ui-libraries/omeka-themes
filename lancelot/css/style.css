@@ -60,13 +60,24 @@ html, body, p, li, div, h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin-top: 30px;
-    margin-left: 10px;
+    color: rgba(112,11,4,1);
+    margin-left: 15px;
 }
 
 h2 {
 	color: rgba(112,11,4,1);
 	font-size: 36px;
 	margin-bottom: 30px;
+}
+
+h3 {
+    color: rgba(112,11,4,1);
+}
+
+h4 {
+    color: rgba(112,11,4,1);
+    font-size: 18px;
+
 }
 
 p {
@@ -82,6 +93,22 @@ p {
 .max-width-900 {
 	max-width: 900px;
 	margin: 0 auto;
+}
+
+.element-set {
+    background-color: whitesmoke;
+    font-size: 14px;
+}
+
+.element h3 {
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.element-text {
+    margin-bottom: 5px;
 }
 
 .button1, .button2, .button3, .button4 {
@@ -198,6 +225,26 @@ a, a:hover {
     text-decoration: none;
 }
 
+#BRcontainer {
+    padding-top: 50px;
+}
+
+#next-item, #previous-item {
+    list-style-type: none;
+}
+
+.file-image {
+    width: 100%;
+}
+
+#item-col-right {
+    padding: 0;
+}
+
+#item-col-left {
+    padding-right: 20px;
+}
+
 @media (max-width: 1200px) {
     .search-footer {
         text-align: center;
@@ -244,6 +291,7 @@ a, a:hover {
         line-height: 34px;
         padding: 13px 15px;
     }
+    
 }
 
 
