@@ -44,7 +44,7 @@
 </head>
 <div class="container-fluid hero">
 		<div class="container">
-			<h1 class="text-center">William Morris Archive</h1>
+			<h1 class="text-center"><a id="wordmark" href="<?php echo WEB_ROOT; ?>">William Morris Archive</a></h1>
 		</div>
 	</div>
 	
@@ -55,22 +55,22 @@
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT ?>/exhibits/show/poetry">Poetry</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/poetry">Poetry</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT ?>/exhibits/show/prose">Prose</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/prose">Prose</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT ?>/exhibits/show/nonfiction">Non-Fiction</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfiction">Non-Fiction</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT ?>/exhibits/show/translations">Translations</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/translations">Translations</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT ?>/exhibits/show/drama">Drama</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/drama">Drama</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT ?>/exhibits/show/bookarts">Book Arts</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/bookarts">Book Arts</a>
 				</li>
 			</ul>
 		</div>

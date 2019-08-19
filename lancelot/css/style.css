@@ -60,6 +60,7 @@ html, body, p, li, div, h1, h2, h3, h4, h5, h6 {
 
 h1 {
     margin-top: 30px;
+    margin-left: 10px;
 }
 
 h2 {
@@ -134,6 +135,7 @@ p.caption {
 }
 
 footer {
+    bottom: 0;
     background-color: rgba(2,39,66,1);
     padding-top: 15px;
     padding-bottom: 30px;
@@ -189,6 +191,11 @@ footer .form-control {
 
 a, a:hover {
     color: rgba(112,11,4,1);
+}
+
+#wordmark {
+    color: rgba(52,81,91,1);
+    text-decoration: none;
 }
 
 @media (max-width: 1200px) {
