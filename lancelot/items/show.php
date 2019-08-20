@@ -25,12 +25,14 @@ echo head(array(
 			<div>
             <?php 
                 $files = $item->getFiles();
-                $type = $files[0]['metadata'];
-                if ($type == '{"mime_type":"application\/pdf"}') {
-                    echo files_for_item ();                        
-                } else {
-                    fire_plugin_hook('public_items_show', array('item' => $item));
-                }
+                if (!empty($files)) {
+                    $type = $files[0]['metadata'];
+                    if ($type == '{"mime_type":"application\/pdf"}') {
+                        echo files_for_item ();                        
+                    } else {
+                        fire_plugin_hook('public_items_show', array('item' => $item));
+                    }
+                }                
             ?>
                 <?php echo all_element_texts($item); ?>		
 			</div>
