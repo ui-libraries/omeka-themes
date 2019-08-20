@@ -22,18 +22,11 @@
     <?php fire_plugin_hook('public_head', array('view' => $this)); ?>
 
     <!-- Stylesheets -->
-    <?php
-    if (get_theme_option('Use Internal Bootstrap')) {
-        queue_css_file('bootstrap.min');
-        queue_css_file('font-awesome.min');
-    } else {
-        queue_css_url('//https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
-        queue_css_url('//https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
-    }
-    queue_css_file('style');  
-
-    echo head_css();
-    ?>
+    <link href="//fonts.googleapis.com/css?family=Arvo:400" media="screen" rel="stylesheet" type="text/css" >
+    <link href="/morris/application/views/scripts/css/admin-bar.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all" rel="stylesheet" type="text/css" >
+    <link href="/morris/themes/lancelot/css/style.css" media="all" rel="stylesheet" type="text/css" >
 
     <!-- JavaScripts -->
     <?php If (get_theme_option('Use Accessible Mega Menu')):
@@ -61,7 +54,7 @@
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/prose">Prose</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfiction">Non-Fiction</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfictiondiariesessays">Non-Fiction</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/translations">Translations</a>

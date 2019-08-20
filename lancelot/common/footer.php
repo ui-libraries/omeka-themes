@@ -11,10 +11,13 @@
     	        <li class="nav-item"><a class="nav-link" href="#">Indices</a></li>
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/aboutmorrisarchive">About the Archive</a></li>
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/life">Morris’s Life</a></li>
-    	        <form class="form-inline ml-auto search-footer">
-                    <input class="form-control search-input" type="search" placeholder="Search" aria-label="Search">
-                    <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
-                </form>
+                <div id="searchbox" class="" role="search">
+                    <?php echo search_form(array(
+                        'show_advanced' => get_theme_option('Use Advanced Search'),
+                        'submit_value' => __('Search'),
+                        'form_attributes' => array('class' => 'form-inline ml-auto search-footer', 'role' => 'form'))); 
+                    ?>
+                </div>
     	    </ul>
     	    <div class="row">
         	    <div class="mx-auto">
@@ -39,5 +42,11 @@
     <?php if (get_theme_option('Use Google Analytics') && $googleAccount = get_theme_option('Google Analytics Account')): ?>
     <?php echo common('analyticstracking.php', array('googleAccount' => $googleAccount)); ?>
     <?php endif; ?>
+    <script>
+        $('ul').click(function(e) {
+            e.stopPropagation();
+            $(this).children().slideToggle();
+        })
+    </script>
 </body>
 </html>

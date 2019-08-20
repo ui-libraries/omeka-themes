@@ -13,8 +13,8 @@
     <?php endif; ?>
             <?php echo $this->formButton('submit_search', $options['submit_value'], array(
                 'type' => 'submit',
-                'class' => 'btn btn-default',
-                'content' => '<span class="glyphicon glyphicon-search"></span>',
+                'class' => 'search-btn',
+                'content' => '<i class="fas fa-search"></i>',
                 'escape' => false,
             )); ?>
         </span>
