@@ -5,10 +5,10 @@
 	<footer class="container-fluid">
 	    <div class="container">
     	    <ul class="nav footer-nav mb-4 justify-content-center">
-    	        <li class="nav-item"><a class="nav-link" href="#">Manuscripts</a></li>
-    	        <li class="nav-item"><a class="nav-link" href="#">Periodicals</a></li>
-    	        <li class="nav-item"><a class="nav-link" href="#">Criticism</a></li>
-    	        <li class="nav-item"><a class="nav-link" href="#">Indices</a></li>
+    	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/resources/manuscripts">Manuscripts</a></li>
+    	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/resources/periodicals">Periodicals</a></li>
+    	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/resources/criticism">Criticism</a></li>
+    	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/resources/indices">Indices</a></li>
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/aboutmorrisarchive">About the Archive</a></li>
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/life">Morris’s Life</a></li>
                 <div id="searchbox" class="" role="search">

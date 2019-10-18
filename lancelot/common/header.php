@@ -51,7 +51,7 @@
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/poetry">Poetry</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/prose">Prose</a>
+					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/romances">Prose</a>
 				</li>
 				<li class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfictiondiariesessays">Non-Fiction</a>
