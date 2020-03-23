@@ -31,12 +31,12 @@ echo head(array(
 <nav class="pager" id="exhibit-page-navigation">
     <?php if ($prevLink = exhibit_builder_link_to_previous_page()): ?>
     <div id="exhibit-nav-prev" class="previous">
-    <?php echo $prevLink; ?>
+    <?php //echo $prevLink; ?>
     </div>
     <?php endif; ?>
     <?php if ($nextLink = exhibit_builder_link_to_next_page()): ?>
     <div id="exhibit-nav-next" class="next">
-    <?php echo $nextLink; ?>
+    <?php //echo $nextLink; ?>
     </div>
     <?php endif; ?>
     <div id="exhibit-nav-up">
@@ -44,12 +44,14 @@ echo head(array(
     </div>
 </nav>
 </div>
+
 <div class="col-sm-3">
     <nav id="exhibit-pages">
-        <h4><?php echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
-        <?php echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
+        <h4><?php //echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
+        <?php //echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
     </nav>
 </div>
+
 </div>
 </div>
 <?php echo foot();

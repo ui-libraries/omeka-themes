@@ -11,7 +11,7 @@ echo head(array(
 			<h2><em>Welcome</em></h2>
 			<p>Welcome to the official database for the William Morris Archive, a text-searchable scholarly edition of the poetry and selected prose of William Morris.</p>
 			<a href="#" class="button1">Titles</a>
-			<a href="#" class="button2">Advanced Search</a>
+			<a href="<?php echo WEB_ROOT; ?>/items/search" class="button2">Advanced Search</a>
 			<a href="#" class="button3">Resources</a>
 			<a href="#" class="button4">Featured Exhibit</a>
 		</div>

@@ -30,7 +30,14 @@ echo head(array(
                     if ($type == '{"mime_type":"application\/pdf"}') {
                         echo files_for_item ();                        
                     } else {
-                        fire_plugin_hook('public_items_show', array('item' => $item));
+                        echo get_specific_plugin_hook_output('BookReader', 'public_items_show', array(
+                            'direct' => true,
+                            'view' => $this,
+                            'item' => $item,
+                            'page' => '1',
+                            'embed_functions' => false,
+                            'mode_page' => 0,
+                        ));
                     }
                 }                
             ?>
@@ -44,7 +51,7 @@ echo head(array(
       <div class="row">
          <div class="col-sm-3">
             <ul>
-                <li id="previous-item" class="previous"><?php echo link_to_previous_item_show(); ?></li>
+                <li id="previous-item" class="previous"><?php //echo link_to_previous_item_show('Previous Item'); ?></li>
             </ul>
          </div>
          <div class="col-sm">
@@ -55,7 +62,7 @@ echo head(array(
          </div>
          <div class="col-sm-3">
             <ul>
-               <li id="next-item" class="next"><?php echo link_to_next_item_show(); ?></li>
+               <li id="next-item" class="next"><?php //echo link_to_next_item_show('Next Item'); ?></li>
             </ul>
          </div>
       </div>

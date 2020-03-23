@@ -163,25 +163,6 @@ $formAttributes['class'] = 'form-horizontal';
         </div>
     </div>
 
-    <?php if(is_allowed('Users', 'browse')): ?>
-    <div class="field form-group">
-    <?php
-        echo $this->formLabel('user-search', __('Search By User')); ?>
-        <div class="col-sm-10">
-        <div class="inputs input-group">
-        <?php
-            echo $this->formSelect(
-                'user',
-                @$_REQUEST['user'],
-                array('id' => 'user-search'),
-                get_table_options('User')
-            );
-        ?>
-        </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
     <div class="field form-group">
         <?php echo $this->formLabel('tag-search', __('Search By Tags')); ?>
         <div class="col-sm-10">

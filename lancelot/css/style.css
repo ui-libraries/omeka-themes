@@ -16,6 +16,34 @@
 
 }
 
+@font-face {
+    font-family: 'Quadraat Italic';
+    src: url('../fonts/quadraatsansot-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Quadraat Regular';
+    src: url('../fonts/quadraatsansot-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'QuadraatOT Italic';
+    src: url('../fonts/quadraatot-italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'QuadraatOT Regular';
+    src: url('../fonts/quadraatot-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html, body, p, li, div, h1, h2, h3, h4, h5, h6 {
 	font-family: "Quadraat Sans";
 }
@@ -62,20 +90,29 @@ h1 {
     margin-top: 30px;
     color: rgba(112,11,4,1);
     margin-left: 15px;
+    font-family: 'QuadraatOT Italic';
+    font-size: 36px;
+    
 }
 
 h2 {
+    font-family: 'QuadraatOT Regular';
 	color: rgba(112,11,4,1);
-	font-size: 36px;
-	margin-bottom: 30px;
+    font-size: 24px;
+    text-transform: small-caps;
+    letter-spacing: 1px;
 }
 
 h3 {
     color: rgba(112,11,4,1);
+    font-family: 'Quadraat Sans';
+    text-transform: capitalize;
+    margin-top: 30px;
+
 }
 
 h4 {
-    color: rgba(112,11,4,1);
+    color: black;
     font-size: 18px;
 
 }
@@ -221,8 +258,13 @@ footer .form-control {
     width: auto;
 }
 
-a, a:hover {
+a {
+    color: #5c5c5c;
+}
+
+a:hover {
     color: rgba(112,11,4,1);
+    text-decoration: none;
 }
 
 #wordmark {
@@ -258,13 +300,36 @@ a, a:hover {
     margin-right: 20px;
 }
 
-@media (max-width: 1200px) {
-    .search-footer {
-        text-align: center;
-        margin: 0 auto;
-        clear: both;
+
+#exhibit-pages {
+    display: none;
+}
+
+.add_search {
+    margin: 20px;
+}
+
+.btn-primary {
+    margin: 20px;
+}
+
+@media (min-width: 900px) {
+    .layout-file-text .exhibit-items.right {
+        float: right;
+        width: 25%;
+        padding-left: 10%;
+    
     }
 }
+
+@media (min-width: 900px) {
+    .layout-file-text {
+        width: 100%;
+    
+    }
+}
+
+
 
 @media (max-width: 991px) {
     .hero {
@@ -293,7 +358,9 @@ a, a:hover {
         width: 100%;
         min-width: 100%;
     }
+    
 }
+
 
 @media (max-width: 530px) {
     .hero {
@@ -306,6 +373,8 @@ a, a:hover {
     }
     
 }
+
+
 
 
 

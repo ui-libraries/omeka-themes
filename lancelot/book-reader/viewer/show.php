@@ -67,9 +67,10 @@
 
     // Create the BookReader object
     br = new BookReader();
+console.log('d')
 
     br.leafMap = [<?php echo implode(',', $pageIndexes); ?>];
-    br.pageNums = [<?php echo implode(',', $pageNumbers); ?>];
+    br.pageNums = [<?php echo implode(',', []); ?>];
     br.pageLabels = [<?php echo implode(',', $pageLabels); ?>];
     br.pageWidths = [<?php echo implode(',', $imgWidths); ?>];
     br.pageHeights = [<?php echo implode(',', $imgHeights); ?>];
