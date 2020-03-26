@@ -176,27 +176,6 @@ $formAttributes['class'] = 'form-horizontal';
         </div>
     </div>
 
-    <?php if (is_allowed('Items','showNotPublic')): ?>
-    <div class="field form-group">
-        <?php echo $this->formLabel('public', __('Public/Non-Public')); ?>
-        <div class="inputs input-group">
-        <div class="col-sm-10">
-        <?php
-            echo $this->formSelect(
-                'public',
-                @$_REQUEST['public'],
-                array(),
-                label_table_options(array(
-                    '1' => __('Only Public Items'),
-                    '0' => __('Only Non-Public Items')
-                ))
-            );
-        ?>
-        </div>
-        </div>
-    </div>
-    <?php endif; ?>
-
     <div class="field form-group">
         <?php echo $this->formLabel('featured', __('Featured/Non-Featured')); ?>
         <div class="col-sm-10">

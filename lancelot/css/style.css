@@ -48,6 +48,11 @@ html, body, p, li, div, h1, h2, h3, h4, h5, h6 {
 	font-family: "Quadraat Sans";
 }
 
+.exhibit-items img {
+    box-shadow: 5px 5px 5px grey;
+    margin-bottom: 5px;
+}
+
 .hero {
 	background-color: rgba(231,230,225,1);
 	background-image: url('../images/hero.jpg');
@@ -96,6 +101,7 @@ h1 {
 }
 
 h2 {
+    margin-top: 20px;
     font-family: 'QuadraatOT Regular';
 	color: rgba(112,11,4,1);
     font-size: 24px;
@@ -105,15 +111,17 @@ h2 {
 
 h3 {
     color: rgba(112,11,4,1);
-    font-family: 'Quadraat Sans';
-    text-transform: capitalize;
+    font-family: 'QuadraatOT Regular';
     margin-top: 30px;
+    font-size: 20px;
 
 }
 
 h4 {
     color: black;
     font-size: 18px;
+    padding-left: 36px;
+    text-indent: -36px;
 
 }
 
@@ -183,11 +191,15 @@ p {
 	color: #FFF;
 }
 
+.exhibit-item-caption {
+    margin: 0 auto;
+}
+
 p.caption {
+    margin: 0 auto;
 	text-align: center;
-	color: rgba(2,39,66,1);
+    color: rgba(2,39,66,1);
 	font-size: 11px;
-	max-width: 100%;
 }
 
 .footer-decoration {
@@ -317,8 +329,7 @@ a:hover {
     .layout-file-text .exhibit-items.right {
         float: right;
         width: 25%;
-        padding-left: 10%;
-    
+        padding-left: 10%;    
     }
 }
 
