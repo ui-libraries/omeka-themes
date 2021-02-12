@@ -11,19 +11,22 @@
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/resources/indices">Indices</a></li>
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/aboutmorrisarchive">About the Archive</a></li>
     	        <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/life">Morris’s Life</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?php echo WEB_ROOT; ?>/items/search">Advanced Search</a></li>
+                <!--
                 <div id="searchbox" class="" role="search">
-                    <?php echo search_form(array(
+
+                    <?php /* echo search_form(array(
                         'show_advanced' => get_theme_option('Use Advanced Search'),
                         'submit_value' => __('Search'),
-                        'form_attributes' => array('class' => 'form-inline ml-auto search-footer', 'role' => 'form'))); 
+                        'form_attributes' => array('class' => 'form-inline ml-auto search-footer', 'role' => 'form'))); */
                     ?>
-                </div>
+                </div> -->
     	    </ul>
     	    <div class="row">
         	    <div class="mx-auto">
                     <a href="https://williammorrissociety.org/"><img src="<?php echo img('william-morris-society.png'); ?>" alt="William Morris Society" width="87"></a>
-            	    <a href="http://www.lib.uiowa.edu/"><img src="<?php echo img('univ-iowa-libraries.png'); ?>" alt="The University of Iowa Libraries" width="208"></a>
-            	    <a href="http://www.lib.uiowa.edu/studio/"><img src="<?php echo img('studio.png'); ?>" alt="The Studio" width="101"></a>
+            	    <a href="http://www.lib.uiowa.edu/"><img src="<?php echo img('univ-iowa-libraries.png'); ?>" alt="The University of Iowa Libraries" width="150"></a>
+            	    <a href="http://www.lib.uiowa.edu/studio/"><img src="<?php echo img('studio.png'); ?>" alt="The Studio" width="171"></a>
         	    </div>
     	    </div>
 	    </div>

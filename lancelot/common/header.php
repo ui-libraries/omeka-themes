@@ -40,33 +40,61 @@
 			<h1 class="text-center"><a id="wordmark" href="<?php echo WEB_ROOT; ?>">William Morris Archive</a></h1>
 		</div>
 	</div>
-	
+<?php //echo $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; ?>
 	<nav class="navbar navbar-expand-lg navbar-dark">
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarNavDropdown">
 			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/poetry">Poetry</a>
+				<li id="poetry" class="nav-item">
+					<a  class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/poetry">Poetry</a>
 				</li>
-				<li class="nav-item">
+				<li id="prose" class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/romances">Prose</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfictiondiariesessays">Non-Fiction</a>
+				<li id="nonfiction"class="nav-item">
+					<a  class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfictiondiariesessays">Non-Fiction</a>
 				</li>
-				<li class="nav-item">
+				<li id="translations" class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/translations">Translations</a>
 				</li>
-				<li class="nav-item">
+				<li id="drama" class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/drama">Drama</a>
 				</li>
-				<li class="nav-item">
+				<li id="bookarts" class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/bookarts">Book Arts</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
     <div class="container" id="wrapper">
-        <div id="content">
+    <div id="content">
+        <script>
+        let url = window.location.href
+        if (url.includes("/exhibits/show/poetry")) {
+            let el = document.getElementById('poetry')
+            el.style.backgroundColor = '#022742'
+        }
+        if (url.includes("/exhibits/show/romances")) {
+            let el = document.getElementById('prose')
+            el.style.backgroundColor = '#022742'
+        }
+        if (url.includes("/exhibits/show/nonfictiondiariesessays")) {
+            let el = document.getElementById('nonfiction')
+            el.style.backgroundColor = '#022742'
+        }
+        if (url.includes("/exhibits/show/translations")) {
+            let el = document.getElementById('translations')
+            el.style.backgroundColor = '#022742'
+        }
+        if (url.includes("/exhibits/show/drama")) {
+            let el = document.getElementById('drama')
+            el.style.backgroundColor = '#022742'
+        }
+        if (url.includes("/exhibits/show/bookarts")) {
+            let el = document.getElementById('bookarts')
+            el.style.backgroundColor = '#022742'
+        }  
+
+        </script>
