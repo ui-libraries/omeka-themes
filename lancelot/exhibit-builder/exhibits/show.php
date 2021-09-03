@@ -32,7 +32,7 @@ echo head(array(
 
 <div class="col-sm-3">
     <nav id="exhibit-pages">
-        asdfasdf
+
         <h4><?php //echo exhibit_builder_link_to_exhibit($exhibit); ?></h4>
         <?php //echo exhibit_builder_page_tree($exhibit, $exhibit_page); ?>
     </nav>

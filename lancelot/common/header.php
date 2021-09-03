@@ -23,10 +23,11 @@
 
     <!-- Stylesheets -->
     <link href="//fonts.googleapis.com/css?family=Arvo:400" media="screen" rel="stylesheet" type="text/css" >
-    <link href="/morris/application/views/scripts/css/admin-bar.css" media="screen" rel="stylesheet" type="text/css" >
+    <link href="/application/views/scripts/css/admin-bar.css" media="screen" rel="stylesheet" type="text/css" >
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" >
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all" rel="stylesheet" type="text/css" >
-    <link href="/morris/themes/lancelot/css/style.css" media="all" rel="stylesheet" type="text/css" >
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" media="all" rel="stylesheet" type="text/css" >    
+    <link href="/themes/lancelot/css/style.css" media="all" rel="stylesheet" type="text/css" >
+    <?php echo head_css(); ?>
 
     <!-- JavaScripts -->
     <?php If (get_theme_option('Use Accessible Mega Menu')):
@@ -54,7 +55,7 @@
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/romances">Prose</a>
 				</li>
 				<li id="nonfiction"class="nav-item">
-					<a  class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfictiondiariesessays">Non-Fiction</a>
+					<a  class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/nonfictiondiariesessays">Nonfiction</a>
 				</li>
 				<li id="translations" class="nav-item">
 					<a class="nav-link" href="<?php echo WEB_ROOT; ?>/exhibits/show/translations">Translations</a>
